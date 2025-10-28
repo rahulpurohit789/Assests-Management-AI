@@ -16,7 +16,8 @@ class Config:
         self.FAISS_INDEX_PATH = "./faiss_index"
         
         # AI Model settings
-        self.EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+        # FastEmbed recommended small English model
+        self.EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
         self.GROQ_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
         
         # Vector store settings
