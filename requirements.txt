@@ -10,9 +10,9 @@ langchain-community>=0.2.0,<0.4.0
 langchain-groq>=0.2.0,<0.3.0
 langsmith>=0.1.0,<0.2.0
 
-# Vector store and embeddings
+# Vector store and embeddings (CPU-only, no torch)
 faiss-cpu==1.12.0
-sentence-transformers==2.2.2
+fastembed==0.4.2
 
 # Data processing (use versions with pre-built wheels, Python 3.13 compatible)
 pandas>=2.0.0,<3.0.0
