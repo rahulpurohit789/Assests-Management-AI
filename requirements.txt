@@ -4,10 +4,10 @@
 # Core framework
 streamlit==1.28.1
 
-# LangChain ecosystem (let resolver pick compatible versions)
-langchain==0.1.0
+# LangChain ecosystem (avoid root 'langchain' to prevent conflicts)
 langchain-community==0.0.20
 langchain-groq==0.1.0
+langsmith==0.0.83
 
 # Vector store and embeddings
 faiss-cpu==1.12.0
