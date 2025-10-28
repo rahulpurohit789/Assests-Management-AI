@@ -21,6 +21,7 @@ class AIComponents:
     def __init__(self, config):
         """Initialize AI components with configuration."""
         self.config = config
+        self.last_error: Optional[str] = None
     
     @st.cache_resource
     def load_embeddings(_self) -> Optional[FastEmbedEmbeddings]:
@@ -32,6 +33,14 @@ class AIComponents:
             )
             return embeddings
         except Exception as e:
+            import traceback
+            _self.last_error = (
+                "Embeddings initialization failed\n"
+                f"Model: {_self.config.EMBEDDING_MODEL}\n"
+                f"Error: {e}\n"
+                f"Traceback:\n{traceback.format_exc()}"
+            )
+            print(_self.last_error)
             return None
     
     @st.cache_resource
@@ -63,6 +72,15 @@ class AIComponents:
             return vectorstore
             
         except Exception as e:
+            import traceback
+            _self.last_error = (
+                "FAISS vector store creation failed\n"
+                f"Index path: {_self.config.FAISS_INDEX_PATH}\n"
+                f"Docs: {len(documents) if documents else 0}\n"
+                f"Error: {e}\n"
+                f"Traceback:\n{traceback.format_exc()}"
+            )
+            print(_self.last_error)
             return None
     
     @st.cache_resource
@@ -71,6 +89,8 @@ class AIComponents:
         try:
             api_key = _self.config.get_groq_api_key()
             if not api_key:
+                _self.last_error = "Missing GROQ_API_KEY in environment variables"
+                print(_self.last_error)
                 return None
             
             llm = ChatGroq(
@@ -83,6 +103,14 @@ class AIComponents:
             return llm
             
         except Exception as e:
+            import traceback
+            _self.last_error = (
+                "LLM initialization failed\n"
+                f"Model: {_self.config.GROQ_MODEL}\n"
+                f"Error: {e}\n"
+                f"Traceback:\n{traceback.format_exc()}"
+            )
+            print(_self.last_error)
             return None
     
     def create_ai_chain(self, vectorstore: FAISS, llm: ChatGroq) -> Tuple[Optional[Any], Optional[Any]]:
@@ -220,7 +248,11 @@ Answer:"""
             return simple_chain, None
             
         except Exception as e:
-            print(f"Error creating AI chain: {e}")
             import traceback
-            traceback.print_exc()
+            _self.last_error = (
+                "AI chain creation failed\n"
+                f"Error: {e}\n"
+                f"Traceback:\n{traceback.format_exc()}"
+            )
+            print(_self.last_error)
             return None, None

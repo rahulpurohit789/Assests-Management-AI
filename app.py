@@ -62,21 +62,33 @@ def main():
         embeddings = ai_components.load_embeddings()
         if embeddings is None:
             st.error("Unable to initialize AI system. Please check your configuration.")
+            if getattr(ai_components, "last_error", None):
+                with st.expander("Show diagnostics: Embeddings", expanded=False):
+                    st.code(ai_components.last_error)
             st.stop()
         
         vectorstore = ai_components.create_vector_store(documents, embeddings)
         if vectorstore is None:
             st.error("Unable to create search index. Please try again.")
+            if getattr(ai_components, "last_error", None):
+                with st.expander("Show diagnostics: Vector Store", expanded=False):
+                    st.code(ai_components.last_error)
             st.stop()
         
         llm = ai_components.create_llm()
         if llm is None:
             st.error("Unable to connect to AI service. Please check your API key.")
+            if getattr(ai_components, "last_error", None):
+                with st.expander("Show diagnostics: LLM", expanded=False):
+                    st.code(ai_components.last_error)
             st.stop()
         
         ai_chain, retriever = ai_components.create_ai_chain(vectorstore, llm)
         if ai_chain is None:
             st.error("Unable to initialize chat system. Please try again.")
+            if getattr(ai_components, "last_error", None):
+                with st.expander("Show diagnostics: AI Chain", expanded=False):
+                    st.code(ai_components.last_error)
             st.stop()
     
     # Display chat interface
