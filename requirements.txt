@@ -1,8 +1,8 @@
 # AI Asset Management Chatbot
 # Streamlit Cloud compatible dependencies
 
-# Core framework
-streamlit==1.28.1
+# Core framework (supports NumPy 2.x on Python 3.13)
+streamlit>=1.36.0,<2.0.0
 
 # LangChain ecosystem (avoid root 'langchain' to prevent conflicts)
 # Align on langchain-core>=0.2 which requires langsmith>=0.1,<0.2
@@ -18,7 +18,7 @@ onnxruntime>=1.20.0,<1.21.0
 
 # Data processing (use versions with pre-built wheels, Python 3.13 compatible)
 pandas>=2.0.0,<3.0.0
-numpy>=1.24.0,<2.0.0
+numpy>=2.1.0,<3.0.0
 
 # Environment management
 python-dotenv==1.0.0
@@ -28,4 +28,4 @@ pydantic>=2.0.0,<3.0.0
 typing-extensions>=4.0.0
 
 # Streamlit dependency constraints
-rich>=10.14.0,<14
+rich==13.9.4
