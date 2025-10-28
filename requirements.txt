@@ -12,7 +12,9 @@ langsmith>=0.1.0,<0.2.0
 
 # Vector store and embeddings (CPU-only, no torch)
 faiss-cpu==1.12.0
-fastembed==0.4.2
+# FastEmbed compatible with Python 3.13 and ONNX Runtime 1.20+
+fastembed==0.7.3
+onnxruntime>=1.20.0,<1.21.0
 
 # Data processing (use versions with pre-built wheels, Python 3.13 compatible)
 pandas>=2.0.0,<3.0.0
@@ -24,3 +26,6 @@ python-dotenv==1.0.0
 # Additional dependencies for stability
 pydantic>=2.0.0,<3.0.0
 typing-extensions>=4.0.0
+
+# Streamlit dependency constraints
+rich>=10.14.0,<14
