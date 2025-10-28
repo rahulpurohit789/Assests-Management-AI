@@ -6,7 +6,7 @@ Handles embeddings, vector store, LLM, and AI chain creation.
 import streamlit as st
 from pathlib import Path
 from typing import Optional, Tuple, Any
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 from langchain_core.documents import Document
@@ -23,28 +23,36 @@ class AIComponents:
         self.config = config
     
     @st.cache_resource
-    def load_embeddings(_self) -> Optional[HuggingFaceEmbeddings]:
+    def load_embeddings(_self) -> Optional[FastEmbedEmbeddings]:
         """Load HuggingFace embeddings model."""
         try:
-            embeddings = HuggingFaceEmbeddings(
-                model_name=_self.config.EMBEDDING_MODEL,
-                model_kwargs={'device': 'cpu'}
+            # FastEmbed uses CPU-only and avoids heavy torch deps
+            embeddings = FastEmbedEmbeddings(
+                model_name=_self.config.EMBEDDING_MODEL
             )
             return embeddings
         except Exception as e:
             return None
     
     @st.cache_resource
-    def create_vector_store(_self, documents: list, _embeddings: HuggingFaceEmbeddings) -> Optional[FAISS]:
+    def create_vector_store(_self, documents: list, _embeddings: FastEmbedEmbeddings) -> Optional[FAISS]:
         """Create FAISS vector store from documents."""
         try:
             # Check if FAISS index exists
             if Path(_self.config.FAISS_INDEX_PATH).exists():
-                vectorstore = FAISS.load_local(
-                    _self.config.FAISS_INDEX_PATH,
-                    _embeddings,
-                    allow_dangerous_deserialization=True
-                )
+                try:
+                    vectorstore = FAISS.load_local(
+                        _self.config.FAISS_INDEX_PATH,
+                        _embeddings,
+                        allow_dangerous_deserialization=True
+                    )
+                except Exception:
+                    # Rebuild if load fails (e.g., dimension mismatch after model change)
+                    vectorstore = FAISS.from_documents(
+                        documents=documents,
+                        embedding=_embeddings
+                    )
+                    vectorstore.save_local(_self.config.FAISS_INDEX_PATH)
             else:
                 vectorstore = FAISS.from_documents(
                     documents=documents,
