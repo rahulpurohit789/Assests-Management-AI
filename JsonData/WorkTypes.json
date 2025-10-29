@@ -1,0 +1,184 @@
+[
+  {
+    "workTypeKey": 4,
+    "workTypeId": "NON-BILLABLE",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 5,
+    "workTypeId": "PREVENTIVE",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 6,
+    "workTypeId": "REGULATORY",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 7,
+    "workTypeId": "REPAIR - ЗАСВАР",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 11,
+    "workTypeId": "REBILL",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 13,
+    "workTypeId": "PROJECT",
+    "failureMode": 0,
+    "invoiced": true,
+    "customerRequired": true
+  },
+  {
+    "workTypeKey": 14,
+    "workTypeId": "CAPITAL IMPROVEMENT",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 35,
+    "workTypeId": "SAFETY",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 37,
+    "workTypeId": "BUILD OUT",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 38,
+    "workTypeId": "EVENT",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 39,
+    "workTypeId": "HEALTH & SAFETY",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 40,
+    "workTypeId": "BILLABLE",
+    "failureMode": 1,
+    "invoiced": true,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 41,
+    "workTypeId": "IRFQ",
+    "failureMode": 1,
+    "invoiced": true,
+    "customerRequired": true
+  },
+  {
+    "workTypeKey": 42,
+    "workTypeId": "CORRECTIVE",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 43,
+    "workTypeId": "OPERATIONAL",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 44,
+    "workTypeId": "MOVE REQUEST",
+    "failureMode": 0,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 45,
+    "workTypeId": "HANDYMAN",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 46,
+    "workTypeId": "IT - FURNITURE RESALE",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 47,
+    "workTypeId": "RELOCATION & STORAGE",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 48,
+    "workTypeId": "IT EQUIP - DISCONNECT",
+    "failureMode": 1,
+    "invoiced": true,
+    "customerRequired": true
+  },
+  {
+    "workTypeKey": 49,
+    "workTypeId": "VENDOR CORRECTIVE",
+    "failureMode": 1,
+    "invoiced": true,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 50,
+    "workTypeId": "BRISYS",
+    "failureMode": 1,
+    "invoiced": true,
+    "customerRequired": true
+  },
+  {
+    "workTypeKey": 51,
+    "workTypeId": "是正",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 52,
+    "workTypeId": "予測",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 53,
+    "workTypeId": "予防",
+    "failureMode": 1,
+    "invoiced": false,
+    "customerRequired": false
+  },
+  {
+    "workTypeKey": 54,
+    "workTypeId": "TEST_AA",
+    "failureMode": 1,
+    "invoiced": true,
+    "customerRequired": true
+  }
+]

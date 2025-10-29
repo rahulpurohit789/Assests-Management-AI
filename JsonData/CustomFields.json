@@ -1,0 +1,1178 @@
+[
+  {
+    "customFieldKey": 111,
+    "fieldName": "Expected Life",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 112,
+    "fieldName": "Replace Asset Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 171,
+    "fieldName": "Manual hard Copy?",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 174,
+    "fieldName": "Power Type [KW]",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 178,
+    "fieldName": "Country of Origin",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 179,
+    "fieldName": "Serviceable",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 180,
+    "fieldName": "Sub-Part Available?",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 181,
+    "fieldName": "Maintenance Info Availab",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 191,
+    "fieldName": "Need Replacement?",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSET LIFE INFO"
+  },
+  {
+    "customFieldKey": 2,
+    "fieldName": "YEAR",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 3,
+    "fieldName": "LICENSE PLATE #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 4,
+    "fieldName": "LICENSE PLATE EXPIRATION",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 5,
+    "fieldName": "POWER SUPPLY",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 6,
+    "fieldName": "CAPACITY (GALLONS)",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 7,
+    "fieldName": "Custom Field 1",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 8,
+    "fieldName": "Custom Field 2",
+    "dataTypeName": "Currency",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 9,
+    "fieldName": "Custom Field 3",
+    "dataTypeName": "Currency",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 13,
+    "fieldName": "FUEL TYPE",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 17,
+    "fieldName": "MS office License",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 18,
+    "fieldName": "Towing Capacity (lbs)",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 20,
+    "fieldName": "PURCHASE DATE",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 21,
+    "fieldName": "Lease Expiration",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 22,
+    "fieldName": "CAPACITY",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 27,
+    "fieldName": "Department",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 28,
+    "fieldName": "Tree Type",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 29,
+    "fieldName": "TREE Location",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 30,
+    "fieldName": "GPS location",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 31,
+    "fieldName": "State Licensed",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 32,
+    "fieldName": "Safety Inspection",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 33,
+    "fieldName": "G.V.W.",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 34,
+    "fieldName": "TURNPIKE",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 35,
+    "fieldName": "FLEETMATICS",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 36,
+    "fieldName": "Model Year",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 37,
+    "fieldName": "Visual Inspection",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 38,
+    "fieldName": "Address",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 41,
+    "fieldName": "Areas",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 42,
+    "fieldName": "VP Job Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 43,
+    "fieldName": "Phase Code",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 45,
+    "fieldName": "TILE ID",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 46,
+    "fieldName": "RESIDENT NAME",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 47,
+    "fieldName": "LEASE START DATE",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 48,
+    "fieldName": "LEASE END DATE",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 49,
+    "fieldName": "INSURANCE POLICY #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 50,
+    "fieldName": "INSURANCE EXP DATE",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 51,
+    "fieldName": "LOCATION",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 60,
+    "fieldName": "Engine Type",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 61,
+    "fieldName": "Weight",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 62,
+    "fieldName": "Speed (MPH)",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 63,
+    "fieldName": "Mode S Code",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 66,
+    "fieldName": "Room Phone Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 67,
+    "fieldName": "Conference Phone Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 68,
+    "fieldName": "GP PO#",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 70,
+    "fieldName": "Body #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 71,
+    "fieldName": "Transmission",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 72,
+    "fieldName": "Special Needs",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 73,
+    "fieldName": "Brake System",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 74,
+    "fieldName": "Fault Code",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 75,
+    "fieldName": "Has Core Charge",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 77,
+    "fieldName": "Asset Down",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 78,
+    "fieldName": "Machine Down At",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 79,
+    "fieldName": "Employee",
+    "dataTypeName": "Contact Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 82,
+    "fieldName": "Engine Spec",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 84,
+    "fieldName": "Weight Limit",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 85,
+    "fieldName": "Tire Size",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 87,
+    "fieldName": "Number of Chairs Needed",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 90,
+    "fieldName": "Pick List example",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 91,
+    "fieldName": "Pick Color",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 96,
+    "fieldName": "HD Size",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 98,
+    "fieldName": "RenoYr",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 99,
+    "fieldName": "Ward",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 100,
+    "fieldName": "Gross Arces",
+    "dataTypeName": "Decimal",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 101,
+    "fieldName": "Walking Course",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 102,
+    "fieldName": "Parking Lot",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 113,
+    "fieldName": "Software installed",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 114,
+    "fieldName": "Does anyone have covid?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 133,
+    "fieldName": "Type of service?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 134,
+    "fieldName": "Reporting",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 135,
+    "fieldName": "Report",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 136,
+    "fieldName": "rep",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 137,
+    "fieldName": "Managers11",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 138,
+    "fieldName": "Load Capacity",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 143,
+    "fieldName": "Power Cap",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 144,
+    "fieldName": "Did anyone get hurt?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 157,
+    "fieldName": "Serial Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 161,
+    "fieldName": "Reading before fill serv",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 165,
+    "fieldName": "Colour",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 169,
+    "fieldName": "Finance Ref#",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 183,
+    "fieldName": "Floor",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 184,
+    "fieldName": "Brand",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 187,
+    "fieldName": "ROUTER ID",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 188,
+    "fieldName": "Server Serial Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 189,
+    "fieldName": "BRISYS ID",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSETS"
+  },
+  {
+    "customFieldKey": 12,
+    "fieldName": "Employee Assignment",
+    "dataTypeName": "Contact Lookup",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 115,
+    "fieldName": "Site",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 116,
+    "fieldName": "Assigned To:",
+    "dataTypeName": "Contact Lookup",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 119,
+    "fieldName": "Expected Return Date:",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 140,
+    "fieldName": "Notes",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 145,
+    "fieldName": "Date needed:",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 163,
+    "fieldName": "Hire Rate Per Diem",
+    "dataTypeName": "Currency",
+    "customFieldGroupName": "ASSIGNMENT INFO"
+  },
+  {
+    "customFieldKey": 93,
+    "fieldName": "Needs a Lift?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 104,
+    "fieldName": "Status",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 158,
+    "fieldName": "Customer Notes",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 159,
+    "fieldName": "Customer Warranty",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 160,
+    "fieldName": "Number of attendees",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 196,
+    "fieldName": "ご氏名",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 197,
+    "fieldName": "メールアドレス",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "CUSTOMER INFORMATION"
+  },
+  {
+    "customFieldKey": 10,
+    "fieldName": "Tenant Name",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 11,
+    "fieldName": "Tenant Cell Phone",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 14,
+    "fieldName": "Unit Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 23,
+    "fieldName": "Request Type",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 40,
+    "fieldName": "Workers Comp",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 52,
+    "fieldName": "Temp Test Location",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 53,
+    "fieldName": "Temp Test Location 2",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 54,
+    "fieldName": "Temperature Reading",
+    "dataTypeName": "Decimal",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 55,
+    "fieldName": "Temperature Reading 2",
+    "dataTypeName": "Decimal",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 56,
+    "fieldName": "Customer PO#",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 57,
+    "fieldName": "County Inventory Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 58,
+    "fieldName": "Service Warranty",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 59,
+    "fieldName": "Shop Ticket #",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 69,
+    "fieldName": "Job #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 76,
+    "fieldName": "Date Needed",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 80,
+    "fieldName": "Machine Owner",
+    "dataTypeName": "Contact Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 83,
+    "fieldName": "Shift",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 86,
+    "fieldName": "Priority",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 88,
+    "fieldName": "Line",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 89,
+    "fieldName": "approval by 3rd party",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 94,
+    "fieldName": "Type of Tool",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 105,
+    "fieldName": "Driver",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 106,
+    "fieldName": "Severity Of Issue",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 107,
+    "fieldName": "Capital Expense?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 108,
+    "fieldName": "Change light bulb",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 109,
+    "fieldName": "IP Address",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 127,
+    "fieldName": "Supply Selection",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 128,
+    "fieldName": "Mainteance Issues",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 129,
+    "fieldName": "Why did this break?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 130,
+    "fieldName": "Work Category",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 139,
+    "fieldName": "How would you rate your ",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 146,
+    "fieldName": "Last Physical Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 147,
+    "fieldName": "Order #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 153,
+    "fieldName": "Did you report this?",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 154,
+    "fieldName": "DOT EXP DATE",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 155,
+    "fieldName": "Rating",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 156,
+    "fieldName": "ICMB",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 162,
+    "fieldName": "Paid",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 166,
+    "fieldName": "Person Location",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 168,
+    "fieldName": "Calibration Interval",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 172,
+    "fieldName": "Manual hard Copy",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 173,
+    "fieldName": "Voltage Type",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 175,
+    "fieldName": "Amperage",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 176,
+    "fieldName": "Phase Volt",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 177,
+    "fieldName": "Other item No",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 193,
+    "fieldName": "Mileage",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "GENERAL"
+  },
+  {
+    "customFieldKey": 121,
+    "fieldName": "Instrument Status",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "INSTRUMENT INFO"
+  },
+  {
+    "customFieldKey": 122,
+    "fieldName": "In Service Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "INSTRUMENT INFO"
+  },
+  {
+    "customFieldKey": 123,
+    "fieldName": "Instrument Capacity",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "INSTRUMENT INFO"
+  },
+  {
+    "customFieldKey": 124,
+    "fieldName": "Instrument Assigned To:",
+    "dataTypeName": "Contact Lookup",
+    "customFieldGroupName": "INSTRUMENT INFO"
+  },
+  {
+    "customFieldKey": 125,
+    "fieldName": "Instrument Assigned Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "INSTRUMENT INFO"
+  },
+  {
+    "customFieldKey": 126,
+    "fieldName": "Instrument Due Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "INSTRUMENT INFO"
+  },
+  {
+    "customFieldKey": 192,
+    "fieldName": "HARSH",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "ISQ"
+  },
+  {
+    "customFieldKey": 198,
+    "fieldName": "test",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "ISQ"
+  },
+  {
+    "customFieldKey": 19,
+    "fieldName": "Core Charge",
+    "dataTypeName": "Currency",
+    "customFieldGroupName": "PARTS"
+  },
+  {
+    "customFieldKey": 44,
+    "fieldName": "Sub-Type",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "PARTS"
+  },
+  {
+    "customFieldKey": 64,
+    "fieldName": "Lamp Hours",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "PARTS"
+  },
+  {
+    "customFieldKey": 65,
+    "fieldName": "Chair Count",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "PARTS"
+  },
+  {
+    "customFieldKey": 95,
+    "fieldName": "Part Priority",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "PARTS"
+  },
+  {
+    "customFieldKey": 148,
+    "fieldName": "Manufacture Part #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "PARTS"
+  },
+  {
+    "customFieldKey": 24,
+    "fieldName": "DELIVER BY",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 25,
+    "fieldName": "DELIVER OPTION",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 26,
+    "fieldName": "PICKUP",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 39,
+    "fieldName": "Quote 1",
+    "dataTypeName": "Currency",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 81,
+    "fieldName": "Accounting PO #",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 92,
+    "fieldName": "Quote",
+    "dataTypeName": "Checkbox",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 149,
+    "fieldName": "Approval Contact",
+    "dataTypeName": "Contact Lookup",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 150,
+    "fieldName": "Approval Code",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 151,
+    "fieldName": "Primary PO#",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 167,
+    "fieldName": "Purchase Order Ref#",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 170,
+    "fieldName": "Finance Asset No",
+    "dataTypeName": "Integer",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 185,
+    "fieldName": "Cost Price",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 186,
+    "fieldName": "Bill To",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "PURCHASE ORDERS"
+  },
+  {
+    "customFieldKey": 117,
+    "fieldName": "Rental Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "Rental Information"
+  },
+  {
+    "customFieldKey": 118,
+    "fieldName": "Terms",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "Rental Information"
+  },
+  {
+    "customFieldKey": 164,
+    "fieldName": "Per Diem - Dec",
+    "dataTypeName": "Currency",
+    "customFieldGroupName": "Rental Information"
+  },
+  {
+    "customFieldKey": 141,
+    "fieldName": "State board of acct",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "State Information"
+  },
+  {
+    "customFieldKey": 142,
+    "fieldName": "Exp Date",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "State Information"
+  },
+  {
+    "customFieldKey": 182,
+    "fieldName": "Location Statusd",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "State Information"
+  },
+  {
+    "customFieldKey": 199,
+    "fieldName": "Test_aa",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "Test_医療系"
+  },
+  {
+    "customFieldKey": 120,
+    "fieldName": "Insurance Experation",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "Vendor Reminders"
+  },
+  {
+    "customFieldKey": 152,
+    "fieldName": "Contract Renewal",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "Vendor Reminders"
+  },
+  {
+    "customFieldKey": 1,
+    "fieldName": "WARRANTY EXPIRATION",
+    "dataTypeName": "Date",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 97,
+    "fieldName": "Warranty Type",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 103,
+    "fieldName": "Warrenty Type",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 131,
+    "fieldName": "Credit from Manufacture",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 132,
+    "fieldName": "Labor Credit",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 190,
+    "fieldName": "Warranty Number",
+    "dataTypeName": "Text",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 194,
+    "fieldName": "VAV-1",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "Warranty"
+  },
+  {
+    "customFieldKey": 195,
+    "fieldName": "VAV2",
+    "dataTypeName": "Lookup",
+    "customFieldGroupName": "Warranty"
+  }
+]

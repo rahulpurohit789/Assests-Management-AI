@@ -1,0 +1,832 @@
+[
+  {
+    "customerKey": 1,
+    "contactKey": 37,
+    "customerId": "JJ -001",
+    "customerName": "Johnson, John",
+    "fileAsName": "John Johnson",
+    "emailAddress": "jjohnson@att.net",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 27,
+        "contactKey": 37,
+        "addressType": "PHYSICAL",
+        "addressLine1": "123 Any street ",
+        "addressLine2": "",
+        "city": "any town",
+        "postalId": "84001",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 36,
+        "contactKey": 37,
+        "phoneNumber": "801-555-1212",
+        "phoneType": "HOME",
+        "phoneLabel": "",
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 2,
+    "contactKey": 39,
+    "customerId": "AERO-001",
+    "customerName": "N279M INVESTMENTS LLC",
+    "fileAsName": "N279M INVESTMENTS LLC",
+    "emailAddress": null,
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": []
+  },
+  {
+    "customerKey": 3,
+    "contactKey": 5,
+    "customerId": "BR-001",
+    "customerName": "Rubble, Barney",
+    "fileAsName": "Barney Rubble",
+    "emailAddress": "rubble_b@bedrockquarry.com",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 4,
+        "contactKey": 5,
+        "addressType": "PHYSICAL",
+        "addressLine1": "220 Rocky Way",
+        "addressLine2": null,
+        "city": "Bedrock",
+        "postalId": "84112",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 7,
+        "contactKey": 5,
+        "phoneNumber": "801-555-4141",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 4,
+    "contactKey": 9,
+    "customerId": "GP-001",
+    "customerName": "Georgia Power",
+    "fileAsName": "Georgia Power",
+    "emailAddress": "bundy_al@garysshoes.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 8,
+        "contactKey": 9,
+        "addressType": "PHYSICAL",
+        "addressLine1": "9764 Jeopardy Lane",
+        "addressLine2": null,
+        "city": "Chicago",
+        "postalId": "84115",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 15,
+        "contactKey": 9,
+        "phoneNumber": "801-555-8181",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 5,
+    "contactKey": 4,
+    "customerId": "FF-001",
+    "customerName": "Flinstone, Fred",
+    "fileAsName": "Fred Flinstone",
+    "emailAddress": "flinstone_f@bedrockquarry.com",
+    "usedInWorkRequests": false,
+    "statusId": "INACTIVE",
+    "isActiveStatus": false,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 3,
+        "contactKey": 4,
+        "addressType": "PHYSICAL",
+        "addressLine1": "345 Cave Stone Road",
+        "addressLine2": null,
+        "city": "Bedrock",
+        "postalId": "84112",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 5,
+        "contactKey": 4,
+        "phoneNumber": "801-555-3131",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      },
+      {
+        "phoneKey": 6,
+        "contactKey": 4,
+        "phoneNumber": "801-555-3132",
+        "phoneType": "CELL",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 6,
+    "contactKey": 6,
+    "customerId": "GJ-001",
+    "customerName": "Jetson, George",
+    "fileAsName": "George Jetson",
+    "emailAddress": "g.jetson@spacelysprockets.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 5,
+        "contactKey": 6,
+        "addressType": "PHYSICAL",
+        "addressLine1": "1234 Skypad Way",
+        "addressLine2": "Apt 17",
+        "city": "Orbit City",
+        "postalId": "84113",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 9,
+        "contactKey": 6,
+        "phoneNumber": "801-555-5151",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 7,
+    "contactKey": 8,
+    "customerId": "GQ-001",
+    "customerName": "Quagmire, Glen",
+    "fileAsName": "Glen Quagmire",
+    "emailAddress": "quagmireg@quahogair.com",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 7,
+        "contactKey": 8,
+        "addressType": "PHYSICAL",
+        "addressLine1": "35 Spooner Street",
+        "addressLine2": null,
+        "city": "Quahog",
+        "postalId": "84114",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 13,
+        "contactKey": 8,
+        "phoneNumber": "801-555-7171",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": [
+      {
+        "key": 21,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": "2023-12-29T06:00:00.000Z",
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 8,
+    "contactKey": 10,
+    "customerId": "HH-001",
+    "customerName": "Hill, Hank",
+    "fileAsName": "Hank Hill",
+    "emailAddress": "Hank@stricklandpropane.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 9,
+        "contactKey": 10,
+        "addressType": "PHYSICAL",
+        "addressLine1": "1836 Alamo Lane",
+        "addressLine2": null,
+        "city": "Arlen",
+        "postalId": "84116",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 17,
+        "contactKey": 10,
+        "phoneNumber": "801-555-9191",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 9,
+    "contactKey": 2,
+    "customerId": "HS-001",
+    "customerName": "Simpson, Homer",
+    "fileAsName": "Homer Simpson",
+    "emailAddress": "hsimpson@springfieldpower.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 1,
+        "contactKey": 2,
+        "addressType": "PHYSICAL",
+        "addressLine1": "742 Evergreen Terrace",
+        "addressLine2": null,
+        "city": "Springfield",
+        "postalId": "84111",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 1,
+        "contactKey": 2,
+        "phoneNumber": "801-555-1212",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 10,
+    "contactKey": 3,
+    "customerId": "PGE-001",
+    "customerName": "PG & E",
+    "fileAsName": "PG & E",
+    "emailAddress": "nflanders@leftorium.com",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 2,
+        "contactKey": 3,
+        "addressType": "PHYSICAL",
+        "addressLine1": "738 Evergreen Terrace",
+        "addressLine2": null,
+        "city": "Springfield",
+        "postalId": "84111",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 3,
+        "contactKey": 3,
+        "phoneNumber": "801-555-2121",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 11,
+    "contactKey": 7,
+    "customerId": "PG-001",
+    "customerName": "Griffin, Peter",
+    "fileAsName": "Peter Griffin",
+    "emailAddress": "pgriffin@pawtucketbrewery.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [
+      {
+        "addressKey": 6,
+        "contactKey": 7,
+        "addressType": "PHYSICAL",
+        "addressLine1": "31 Spooner Street",
+        "addressLine2": null,
+        "city": "Quahog",
+        "postalId": "84114",
+        "stateOrProvince": "UT"
+      }
+    ],
+    "phones": [
+      {
+        "phoneKey": 11,
+        "contactKey": 7,
+        "phoneNumber": "801-555-6161",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 12,
+    "contactKey": 119,
+    "customerId": "MTG",
+    "customerName": "MTG",
+    "fileAsName": "MTG",
+    "emailAddress": "bgunn87@icloud.com",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 50,
+        "contactKey": 119,
+        "phoneNumber": "801-566-3776",
+        "phoneType": null,
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 13,
+    "contactKey": 126,
+    "customerId": "AB-002",
+    "customerName": "Snow, John",
+    "fileAsName": "Snow, John",
+    "emailAddress": "john@att.net",
+    "usedInWorkRequests": false,
+    "statusId": "INACTIVE",
+    "isActiveStatus": false,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 53,
+        "contactKey": 126,
+        "phoneNumber": "801-555-5545",
+        "phoneType": null,
+        "phoneLabel": null,
+        "isDefault": false
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 14,
+    "contactKey": 200,
+    "customerId": "SAM",
+    "customerName": "SA Metal Group (Pty) LTD",
+    "fileAsName": "SA Metal Group (Pty) LTD",
+    "emailAddress": "anton1@supalift.co.za",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 55,
+        "contactKey": 200,
+        "phoneNumber": "0215903900",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": true
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 15,
+    "contactKey": 201,
+    "customerId": "SA METAL",
+    "customerName": "SA Metal JHB",
+    "fileAsName": "SA Metal JHB",
+    "emailAddress": "christine.snyman1985@gmail.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 56,
+        "contactKey": 201,
+        "phoneNumber": "0730983445",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": true
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 16,
+    "contactKey": 248,
+    "customerId": "KG-401",
+    "customerName": "Gibb Ent.",
+    "fileAsName": "Gibb Ent.",
+    "emailAddress": "Kristopher.gibb@eptura.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 57,
+        "contactKey": 248,
+        "phoneNumber": "401-895-7836",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": true
+      }
+    ],
+    "customFields": []
+  },
+  {
+    "customerKey": 17,
+    "contactKey": 299,
+    "customerId": "ch001",
+    "customerName": "千代田製作所株式会社",
+    "fileAsName": "千代田製作所株式会社",
+    "emailAddress": "abc@chiyodas.co.jp",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 61,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 18,
+    "contactKey": 310,
+    "customerId": "Welder",
+    "customerName": "Zulbayar",
+    "fileAsName": "Zulbayar",
+    "emailAddress": "enkhmanlai.kh@premiumconcrete.mn",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 69,
+        "contactKey": 310,
+        "phoneNumber": "94252948",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": true
+      }
+    ],
+    "customFields": [
+      {
+        "key": 62,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 19,
+    "contactKey": 311,
+    "customerId": "Auto repairman",
+    "customerName": "Naranbaatar",
+    "fileAsName": "Naranbaatar",
+    "emailAddress": "mshop1785@gmail.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 70,
+        "contactKey": 311,
+        "phoneNumber": "99400098",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": true
+      }
+    ],
+    "customFields": [
+      {
+        "key": 63,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 20,
+    "contactKey": 312,
+    "customerId": "Auto electrician",
+    "customerName": "Olzbayar",
+    "fileAsName": "Olzbayar",
+    "emailAddress": "battsooj.e@premiumconcrete.mn",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [
+      {
+        "phoneKey": 71,
+        "contactKey": 312,
+        "phoneNumber": "80022391",
+        "phoneType": "HOME",
+        "phoneLabel": null,
+        "isDefault": true
+      }
+    ],
+    "customFields": [
+      {
+        "key": 64,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 21,
+    "contactKey": 317,
+    "customerId": "CST001",
+    "customerName": "Test Cust",
+    "fileAsName": "Test Cust",
+    "emailAddress": "test.cust@gmail.com",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 69,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 22,
+    "contactKey": 318,
+    "customerId": "CT-001",
+    "customerName": "CT001",
+    "fileAsName": "CT001",
+    "emailAddress": "afm@afm.cc",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 70,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 23,
+    "contactKey": 319,
+    "customerId": "Test 1000",
+    "customerName": "Test 1000",
+    "fileAsName": "Test 1000",
+    "emailAddress": "test1000@gmail.com",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 71,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 24,
+    "contactKey": 324,
+    "customerId": "HARSH_ISQ",
+    "customerName": "HARSH_ISQ",
+    "fileAsName": "HARSH_ISQ",
+    "emailAddress": "qwerty1@gmail.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 80,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 25,
+    "contactKey": 326,
+    "customerId": "ISQ_CUST_2",
+    "customerName": "ISQ_CUST_2",
+    "fileAsName": "ISQ_CUST_2",
+    "emailAddress": "qwertyui@gm.co",
+    "usedInWorkRequests": true,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 85,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 26,
+    "contactKey": 327,
+    "customerId": "MORI_TRUST",
+    "customerName": "Mor Trust",
+    "fileAsName": "Mor Trust",
+    "emailAddress": "info@mortrst.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 86,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 27,
+    "contactKey": 333,
+    "customerId": "HARSH",
+    "customerName": "Harsh Khanna",
+    "fileAsName": "Harsh Khanna",
+    "emailAddress": "hk@gmail.com",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 91,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  },
+  {
+    "customerKey": 28,
+    "contactKey": 337,
+    "customerId": "test_hospital",
+    "customerName": "AA_hospital",
+    "fileAsName": "AA_hospital",
+    "emailAddress": "aa_hospital@aa.co.jp",
+    "usedInWorkRequests": false,
+    "statusId": "ACTIVE",
+    "isActiveStatus": true,
+    "pricePointId": null,
+    "addresses": [],
+    "phones": [],
+    "customFields": [
+      {
+        "key": 96,
+        "customFieldKey": 159,
+        "fieldName": "Customer Warranty",
+        "value": null,
+        "partKey": 0,
+        "modificationDate": null,
+        "updateType": null
+      }
+    ]
+  }
+]

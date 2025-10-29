@@ -108,6 +108,17 @@ class UIComponents:
                 st.warning("No data file found")
             
             st.markdown("---")
+            st.markdown("### ⚙️ AI Settings")
+            # Runtime controls (no hardcoding logic)
+            temp = st.slider("Model temperature", 0.0, 1.0, float(config.LLM_TEMPERATURE), 0.05,
+                             help="Lower = more deterministic; higher = more creative")
+            k = st.slider("Results to retrieve (k)", 3, 30, int(config.VECTOR_STORE_K), 1,
+                          help="Number of top matches given to the model")
+            # Apply to config for this session
+            config.LLM_TEMPERATURE = float(temp)
+            config.VECTOR_STORE_K = int(k)
+
+            st.markdown("---")
             st.markdown("### 💡 Tips")
             st.markdown("• Ask specific questions about your assets")
             st.markdown("• Use asset IDs for precise searches")
@@ -184,8 +195,13 @@ class UIComponents:
         )
     
     def _is_data_query(self, query: str) -> bool:
-        """Check if query needs exact data lookup."""
-        # Let AI handle all queries - no hardcoding
+        """Check if query needs exact data lookup (deterministic).
+        Detects patterns like "work orders for asset MPT-001" - specific ID-based lookups.
+        Note: Count queries are now handled intelligently by the AI through GLOBAL SUMMARY.
+        """
+        q = (query or "").lower()
+        if ("work order" in q or "work orders" in q) and "asset" in q:
+            return True
         return False
     
     def _analyze_floors(self, data: list) -> str:
@@ -260,9 +276,75 @@ class UIComponents:
         return response
 
     def _get_exact_data_response(self, query: str) -> str:
-        """Get exact data response by querying the full dataset."""
-        # All queries now go through AI - no hardcoding
-        return None
+        """Deterministic lookup for work orders by assetId, including priorities and linked invoices.
+        
+        This handles ONLY specific ID-based queries (e.g., "work orders for asset MPT-001").
+        For count queries, the AI now handles these intelligently through GLOBAL SUMMARY documents.
+        """
+        try:
+            import re
+            import json
+            from pathlib import Path
+
+            # Extract assetId token after the word 'asset'
+            m = re.search(r"asset\s+([A-Za-z0-9\-_.]+)", query, flags=re.IGNORECASE)
+            if not m:
+                return None
+            asset_id = m.group(1).strip()
+
+            base = Path("JsonData")
+            wo_path = base / "WorkOrders.json"
+            inv_path = base / "Invoice.json"
+
+            if not wo_path.exists():
+                return None
+
+            def load_json_safe(path: Path):
+                for enc in ['utf-8', 'utf-8-sig', 'latin-1', 'cp1252']:
+                    try:
+                        with open(path, 'r', encoding=enc) as f:
+                            return json.load(f)
+                    except Exception:
+                        continue
+                return []
+
+            wos = load_json_safe(wo_path) or []
+            invoices = load_json_safe(inv_path) or []
+
+            # Index invoices by originating work order (both key and number)
+            invs_by_wo_key = {}
+            invs_by_wo_num = {}
+            for inv in invoices:
+                if inv.get("originatingWorkOrderKey") is not None:
+                    invs_by_wo_key.setdefault(inv.get("originatingWorkOrderKey"), []).append(inv)
+                if inv.get("originatingWorkOrderNumber") is not None:
+                    invs_by_wo_num.setdefault(inv.get("originatingWorkOrderNumber"), []).append(inv)
+
+            # Filter WOs
+            target_wos = [wo for wo in wos if (wo.get("assetId") or "").strip() == asset_id]
+            if not target_wos:
+                return f"No work orders found for asset {asset_id}."
+
+            # Format
+            lines = [f"Work orders for asset {asset_id} ({len(target_wos)} found):"]
+            for wo in sorted(target_wos, key=lambda x: x.get("workOrderNumber") or 0)[:50]:
+                wo_num = wo.get("workOrderNumber")
+                wo_key = wo.get("workOrderKey")
+                pr = wo.get("priorityId")
+                wt = wo.get("workTypeId")
+                st = wo.get("statusId")
+                asg = wo.get("assigned")
+                # Find invoices linked to this WO
+                linked = []
+                linked.extend(invs_by_wo_key.get(wo_key, []))
+                linked.extend(invs_by_wo_num.get(wo_num, []))
+                inv_nums = sorted({inv.get("invoiceNumber") for inv in linked if inv.get("invoiceNumber") is not None})
+                inv_text = f"Linked invoices: {inv_nums}" if inv_nums else "Linked invoices: None"
+                lines.append(f"- WO #{wo_num} [$" + str(st) + f"] Type={wt} Priority={pr} Assigned={asg}. {inv_text}")
+
+            return "\n".join(lines)
+        except Exception:
+            return None
     
     def _build_conversation_history(self) -> str:
         """Build conversation history string from session state messages."""

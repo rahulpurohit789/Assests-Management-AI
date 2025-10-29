@@ -1,0 +1,22 @@
+[
+  {
+    "priorityKey": 1,
+    "priorityId": "Critical",
+    "order": 1
+  },
+  {
+    "priorityKey": 2,
+    "priorityId": "Major",
+    "order": 2
+  },
+  {
+    "priorityKey": 3,
+    "priorityId": "Normal",
+    "order": 3
+  },
+  {
+    "priorityKey": 13,
+    "priorityId": "Minor",
+    "order": 4
+  }
+]

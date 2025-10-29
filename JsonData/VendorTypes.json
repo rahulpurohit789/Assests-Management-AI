@@ -1,0 +1,90 @@
+[
+  {
+    "typeKey": 1,
+    "typeId": "AUTOMOTIVE SUPPLIES"
+  },
+  {
+    "typeKey": 2,
+    "typeId": "BODY WORK"
+  },
+  {
+    "typeKey": 3,
+    "typeId": "GLASS"
+  },
+  {
+    "typeKey": 4,
+    "typeId": "ON-SITE"
+  },
+  {
+    "typeKey": 5,
+    "typeId": "OFF-SITE"
+  },
+  {
+    "typeKey": 6,
+    "typeId": "TIRES"
+  },
+  {
+    "typeKey": 7,
+    "typeId": "SHOP SUPPLIES"
+  },
+  {
+    "typeKey": 8,
+    "typeId": "TOOLS"
+  },
+  {
+    "typeKey": 9,
+    "typeId": "EQUIPMENT SUPPLIES"
+  },
+  {
+    "typeKey": 10,
+    "typeId": "BUILDING MAINTENANCE"
+  },
+  {
+    "typeKey": 11,
+    "typeId": "PARTS"
+  },
+  {
+    "typeKey": 12,
+    "typeId": "PARTS & SERVICE"
+  },
+  {
+    "typeKey": 13,
+    "typeId": "SERVICE"
+  },
+  {
+    "typeKey": 14,
+    "typeId": "AUTOMOTIVE DEALER"
+  },
+  {
+    "typeKey": 15,
+    "typeId": "LIGHTS"
+  },
+  {
+    "typeKey": 16,
+    "typeId": "PLUMBING"
+  },
+  {
+    "typeKey": 18,
+    "typeId": "POOLS"
+  },
+  {
+    "typeKey": 19,
+    "typeId": "GROUNDS"
+  },
+  {
+    "typeKey": 20,
+    "typeId": "Transmission Services"
+  },
+  {
+    "typeKey": 22,
+    "typeId": "Employee"
+  },
+  {
+    "typeKey": 23,
+    "typeId": "Medical"
+  },
+  {
+    "typeKey": 24,
+    "typeId": "Test"
+  }
+]

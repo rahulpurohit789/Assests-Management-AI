@@ -1,0 +1,3712 @@
+[
+  {
+    "partKey": 80,
+    "partId": "C1084",
+    "description": "BrakeBest Select Ceramic - Brake Pad Set (Front)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 81,
+    "partId": "C967",
+    "description": "BrakeBest Select Ceramic - Brake Pad Set (Rear)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 82,
+    "partId": "MX1084",
+    "description": "Wagner ThermoQuiet - Brake Pad Set (Front)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 83,
+    "partId": "MX967A",
+    "description": "Wagner ThermoQuiet - Brake Pad Set (Rear)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 84,
+    "partId": "14166",
+    "description": "BrakeBest Brake Caliper Guide Pin",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 85,
+    "partId": "16122",
+    "description": "BrakeBest Brake Caliper Guide Pin Boot Kit ",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "PAIR",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 86,
+    "partId": "947",
+    "description": "Brake Best Select Brake Shoes - Parking Brake",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 87,
+    "partId": "56T85",
+    "description": "WIX - Air Filter",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "BOX",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 88,
+    "partId": "58846",
+    "description": "WIX - Transmission Filter Kit",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 89,
+    "partId": "57899XP",
+    "description": "WIX - XP Oil Filter",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 90,
+    "partId": "57899",
+    "description": "WIX - Oil Filter",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 91,
+    "partId": "K060795",
+    "description": "Gates - Century Series Micro-V Serpentine Belt",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 92,
+    "partId": "ACK060795",
+    "description": "Gates - Micro-V Accessory Belt Drive Kit",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 93,
+    "partId": "19569",
+    "description": "Gates - Heater Hose (Outlet)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 94,
+    "partId": "19570",
+    "description": "Gates - Heater Hose (Inlet)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 95,
+    "partId": "94RPLT",
+    "description": "Super Start Platinum Battery",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 96,
+    "partId": "ULT 05-0763",
+    "description": "Ultima - Alternator 215A",
+    "type": "FORD TAURUS",
+    "status": "REMAN",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 97,
+    "partId": "07-0541",
+    "description": "Ultima - Starter 12v",
+    "type": "FORD TAURUS",
+    "status": "REMAN",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 98,
+    "partId": "K040539",
+    "description": "Gates - Century Series Micro-V Serpentine Belt",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 99,
+    "partId": "1-5-20-5QT",
+    "description": "Mobil 1 Synthetic 5W-20",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "5 QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 100,
+    "partId": "1-5-20",
+    "description": "Mobil 1 Synthetic 5W-20",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 101,
+    "partId": "MSATF",
+    "description": "Mobil 1 Synthetic ATF",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 102,
+    "partId": "SC1508",
+    "description": "BrakeBest Select - Brake Pad Set (Front)",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 103,
+    "partId": "SC1377",
+    "description": "BrakeBest Select - Brake Pad Set (Rear)",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 104,
+    "partId": "46935",
+    "description": "WIX - Air Filter",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 105,
+    "partId": "24068",
+    "description": "WIX - Cabin Air Filter",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 106,
+    "partId": "51348XP",
+    "description": "WIX - XP Oil Filter",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 107,
+    "partId": "51348",
+    "description": "WIX - Oil Filter",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 108,
+    "partId": "363-6572",
+    "description": "CAT FILTER - FUEL Primary Element",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 109,
+    "partId": "360-8960",
+    "description": "CAT FILTER - FUEL Secondary Element",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 110,
+    "partId": "7W-2326",
+    "description": "CAT FILTER - ENGINE OIL ",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 111,
+    "partId": "346-6687",
+    "description": "CAT FILTER - AIR Primary Element",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 112,
+    "partId": "119-4740",
+    "description": "CAT FILTER - TRANMISSION HYDRAULIC OIL",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 113,
+    "partId": "5P-6718",
+    "description": "CAT SEAL - TRANSMISSION HYDRAULIC SEAL",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 114,
+    "partId": "362-1163",
+    "description": "CAT FILTER - ELEMENT-HYD",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 115,
+    "partId": "6S-3002",
+    "description": "CAT SEAL",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 116,
+    "partId": "2M-9780",
+    "description": "CAT SEAL",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 117,
+    "partId": "346-6688",
+    "description": "CAT FILTER - AIR Secondary Element",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 118,
+    "partId": "211-2660",
+    "description": "CAT FILTER - AIR Cabin Recirculating",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 119,
+    "partId": "211-2661",
+    "description": "CAT FILTER - AIR Cabin Fresh Air",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 120,
+    "partId": "452-6006",
+    "description": "CAT Prime Application Grease",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "CARTRIDGE",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 121,
+    "partId": "7T-3251",
+    "description": "CAT BREATHER Transmission ",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 122,
+    "partId": "6V-6228",
+    "description": "CAT SEAL",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 123,
+    "partId": "339-1048",
+    "description": "CAT BREATHER Crankcase Element Kit",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 124,
+    "partId": "197-9155",
+    "description": "CAT BREATHER Rear Axle",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 125,
+    "partId": "197-0017",
+    "description": "CAT Axle and Brake Oil Additive",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 126,
+    "partId": "253-5024",
+    "description": "CAT BREATHER Front Axle",
+    "type": "CAT 420FST",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 127,
+    "partId": "TY26498",
+    "description": "JD Battery,Dry,12V,BCI 22NF,CCA 500",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 128,
+    "partId": "TY26498A",
+    "description": "JD Battery,Dry,12V,BCI 22NF,CCA 500",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 129,
+    "partId": "M806418",
+    "description": "JD FILTER - ENGINE OIL",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 130,
+    "partId": "M801101",
+    "description": "JD FILTER - FUEL Primary",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 131,
+    "partId": "AM116304",
+    "description": "JD FILTER - FUEL Strainer",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 132,
+    "partId": "M131802",
+    "description": "JD FILTER - AIR Primary",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 133,
+    "partId": "M131803",
+    "description": "JD FILTER - AIR Secondary",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 134,
+    "partId": "LVA16054",
+    "description": "JD FILTER - Transmission",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 135,
+    "partId": "LVA21036",
+    "description": "JD FILTER Kit",
+    "type": "JD 1025R",
+    "status": "NEW",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 136,
+    "partId": "TY25879",
+    "description": "JD Battery,Dry,12V,BCI 31,CCA 925",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 137,
+    "partId": "TY25879A",
+    "description": "JD Battery,Dry,12V,BCI 31,CCA 925",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 138,
+    "partId": "RE539279",
+    "description": "JD FILTER - ENGINE OIL",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 139,
+    "partId": "RE556406",
+    "description": "JD FILTER - FUEL Kit",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 140,
+    "partId": "RE577060",
+    "description": "JD FILTER - Hydraulic/Transmission",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 141,
+    "partId": "RE291412",
+    "description": "JD FILTER - Cab Recirculation Filter",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 142,
+    "partId": "RE333569",
+    "description": "JD FILTER - Cab Recirculation Filter (CARBON)",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 143,
+    "partId": "RE564863",
+    "description": "JD FILTER - AIR Engine Primary",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 144,
+    "partId": "F071151",
+    "description": "JD FILTER - AIR Engine Secondary",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 145,
+    "partId": "SE501775",
+    "description": "JD CAMSHAFT REMAN Kit, Camshasft 6090 T3 & iT4 6090RW447 R522884",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 146,
+    "partId": "SE502544",
+    "description": "JD CONNECTING ROD REMAN Con Rod 6090 iT4 6090RW447 RE537877",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 147,
+    "partId": "SE502713",
+    "description": "JD CRANKSHAFT REMAN Crankshaft Kit, 6090 iT4/FT4 6090RW447 RE533517, RE548603, RE565972, R525588",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 148,
+    "partId": "SE502540",
+    "description": "JD CYLINDER HEAD REMAN Head, Cylinder 6090 iT4 6090RW447 RE533513, RE542692, RE533512",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 149,
+    "partId": "SE502553",
+    "description": "JD FUEL INJECTION PUMP REMAN Pump, Denso HPCR HP4 RE543262, RE543278",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 150,
+    "partId": "SE502557",
+    "description": "JD INJECTION NOZZLE REMAN Kit, Injector Denso HPCR RE543606, RE543354",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 151,
+    "partId": "PG201149",
+    "description": "JD MODULE REMAN HYDRO MODULE, REMAN RE332671",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 152,
+    "partId": "SE502546",
+    "description": "JD OIL PUMP REMAN Pump, Oil S450 6090 iT4 6090RW447 RE538136",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 153,
+    "partId": "SE502823",
+    "description": "JD STARTER MOTOR REMAN Starter RE548693; RE549230, RE539695, RE537519",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 154,
+    "partId": "SE502594",
+    "description": "JD TURBOCHARGER REMAN Turbo, Reman RE545594, RE547974",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 155,
+    "partId": "SE502545",
+    "description": "JD WATER PUMP REMAN Pump, Water S450 RE553432, RE535522, RE538873, RE548846 replaces SE502742",
+    "type": "JD 7250R",
+    "status": "REMAN",
+    "baseUnit": "KIT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 156,
+    "partId": "FH323709",
+    "description": "JD FILTER Hydraulic (Tank)",
+    "type": "JD L340",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 157,
+    "partId": "AFH210353",
+    "description": "JD FILTER Hydraulic (Block)",
+    "type": "JD L340",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 158,
+    "partId": "TPFFR21M",
+    "description": "Trane Return Grill Merv 8 Replacement for BAYFTFR21M 21x27x5",
+    "type": "TRANE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 159,
+    "partId": "XP5325",
+    "description": "Autolite Iridium XP - SP",
+    "type": "SPARK PLUG",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 160,
+    "partId": "AF2000 ",
+    "description": "Prestone Antifreeze premixed",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 161,
+    "partId": "PCV613",
+    "description": "BWD - PCT Valve",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 162,
+    "partId": "22A",
+    "description": "Bosch ICON - Wiper Blade (Driver Side)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 163,
+    "partId": "22B",
+    "description": "Bosch ICON - Wiper Blade (Passenger Side)",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 167,
+    "partId": "LF14000",
+    "description": "Oil Filter for Cummins ISX - Fleetgaurd",
+    "type": "CUMMINS ISX",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 168,
+    "partId": "112825",
+    "description": "Mobil Delvac 1 ESP 5W-40",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 169,
+    "partId": "FF2200",
+    "description": "Fuel Filter for Cummins ISX - Fleetgaurd",
+    "type": "CUMMINS ISX",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 170,
+    "partId": "WF2121",
+    "description": "Coolant Filter for Cummins ISX - Fleetgaurd",
+    "type": "CUMMINS ISX",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 171,
+    "partId": "CV50634",
+    "description": "Crankcase Breather for Cummins ISX - Fleetgaurd",
+    "type": "CUMMINS ISX",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 172,
+    "partId": "4969700NX",
+    "description": "Diesel Particulate Filter w/Gaskets for Cummins ISX",
+    "type": "CUMMINS ISX",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 173,
+    "partId": "50826700NX",
+    "description": "DEF Dosing Filter for Cummins ISX",
+    "type": "CUMMINS ISX",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 174,
+    "partId": "CC36155-6PK ",
+    "description": "HD Antifreeze/Coolant for Cummins ISX",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 175,
+    "partId": "FF20251",
+    "description": "Filtrete 20x25x1 Filter",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 176,
+    "partId": "RE284091",
+    "description": "JD FILTER - AIR FRESH",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 177,
+    "partId": "H216169 ",
+    "description": "JD FILTER - Breather, Fuel Tank",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 178,
+    "partId": "LVU14258",
+    "description": "JD FILTER - Front PTO Filter",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 179,
+    "partId": "RE540710",
+    "description": "JD FILTER - CRANKCASE VENT",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 180,
+    "partId": "AL204884 ",
+    "description": "JD FILTER - TRAILER AIR BRAKE DRYER CARTRIDGE",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 181,
+    "partId": "RE554498",
+    "description": "JD FILTER - DEF DOSING UNIT",
+    "type": "JD 7250R",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 182,
+    "partId": "078601",
+    "description": "MLG15 - Air Cleaner Element",
+    "type": "MLG15M",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 183,
+    "partId": "0D9723S",
+    "description": "MLG15 - Air Filter Element",
+    "type": "MLG15M",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 184,
+    "partId": "070185ES-1",
+    "description": "MLG15 - Oil Filter 90mm",
+    "type": "MLG15M",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 185,
+    "partId": "0667670100",
+    "description": "MLG15 - Fuel Filter",
+    "type": "MLG15M",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 186,
+    "partId": "0A37510102",
+    "description": "MLG15 - Fuel filter (Heated)",
+    "type": "MLG15M",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 187,
+    "partId": "1-10-30-5QT",
+    "description": "Mobil 1 10w-30 Full Synthetic 5 qt.",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "5 QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 188,
+    "partId": "VN760 TURBO",
+    "description": "CUMMINS TURBO",
+    "type": "CUMMINS ISX",
+    "status": "REBUILT",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 189,
+    "partId": "SL-1034-A",
+    "description": "Slime 1034-A T-Handle Tire Plug Kit",
+    "type": "SEALS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 190,
+    "partId": "72790",
+    "description": "Reese Towpower 1 1/4 in wheel bearing kit",
+    "type": "SEALS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 191,
+    "partId": "53-0101",
+    "description": "Regulator, Air Filter w/Gauge 0-160psi",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 192,
+    "partId": "93-1940",
+    "description": "FILTER, HYDRAULIC UPGRADE KIT OIL (HAAS HPU)",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 193,
+    "partId": "9306-HEADLIGHT",
+    "description": "9306 headlight bulb",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 194,
+    "partId": "FS561",
+    "description": "Semi Truck Tire 11r22.5",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 195,
+    "partId": "17948",
+    "description": "ULTIMA - starter for 2011 Dodge Ram 1500",
+    "type": "RAM 1500 PICKUP",
+    "status": "REMAN",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 196,
+    "partId": "102456",
+    "description": "Rear bumper for Dodge Ram 1500",
+    "type": "RAM 1500 PICKUP",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 197,
+    "partId": "101911",
+    "description": "250 Hour Engine Service Kit",
+    "type": "OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 198,
+    "partId": "3157A",
+    "description": "Interior Lightbulb",
+    "type": "LIGHTBULBS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 199,
+    "partId": "40215R",
+    "description": "Taillight",
+    "type": "LIGHTBULBS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 200,
+    "partId": "81-0001-B",
+    "description": "Glad Hand, Service",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 201,
+    "partId": "GDA243638",
+    "description": "Mud Flap, 24\"x36\"x3/8\"",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 202,
+    "partId": "372-7097",
+    "description": "Wheel Seal Kit",
+    "type": "SEALS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 203,
+    "partId": "BD171",
+    "description": "295-75R22.5 Drive Tire",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 204,
+    "partId": "372-7098",
+    "description": "Wheel Seal Kit",
+    "type": "SEALS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 205,
+    "partId": "TRANSMISSION",
+    "description": "dodge tranny",
+    "type": "TRANSMISSION",
+    "status": "REMAN",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 206,
+    "partId": "MISC PARTS",
+    "description": "misc Parts",
+    "type": "NUTS+BOLTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 207,
+    "partId": "PROJECT PARTS",
+    "description": "",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 208,
+    "partId": "PENCILS",
+    "description": "#2 Pencils",
+    "type": "OFFICE SUPPLIES",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 209,
+    "partId": "FORD MIRROR",
+    "description": "ford passenger mirror",
+    "type": "FORD TAURUS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 210,
+    "partId": "7017000",
+    "description": "10 WT. NON-DETERGENT OIL",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 211,
+    "partId": "7018034",
+    "description": "Permatex Super Lube with Teflon Grease",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 212,
+    "partId": "2019114",
+    "description": "Filter Element for Challenger III",
+    "type": "FILTER-OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 213,
+    "partId": "2020091-1",
+    "description": "Bowl Seal for Challenger III",
+    "type": "SEALS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 214,
+    "partId": "1017716",
+    "description": "Replacement Battery - Servo",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 215,
+    "partId": "1017516",
+    "description": "Replacement Battery - Motion Controller",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 216,
+    "partId": "TP - 001",
+    "description": "Toilet Paper",
+    "type": "CONSUMABLES",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 217,
+    "partId": "RG PART 1",
+    "description": "part for generator",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 218,
+    "partId": "3637",
+    "description": "WELLHEAD - NEEDLE VALVE WELLHEAD NV 1/4' X 1/4'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 219,
+    "partId": "6377",
+    "description": "CONTROL VALVE Multi Other Control Valve",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 220,
+    "partId": "6316",
+    "description": "SSV ACTUATOR SSV ACTUATOR",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 221,
+    "partId": "7626",
+    "description": "WELLHEAD - CHOKE CORTEX 2-1/16 15K CHOKE",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 222,
+    "partId": "6442",
+    "description": "SCHEDULE 80 FLOWLINE 1 13/16' 10k Flange",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 223,
+    "partId": "2497",
+    "description": "WELLHEAD - RELIEF VALVE 1/2' QUICK EXHAUST",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 224,
+    "partId": "6537",
+    "description": "CONTROLLER Humphrey",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 225,
+    "partId": "5053",
+    "description": "GREASE Spartek Degreaser - ID Red 650ml spray",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 226,
+    "partId": "9192",
+    "description": "PUMP Sun Pumper Chemical Injection Solar Pump",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 227,
+    "partId": "3152",
+    "description": "MEASUREMENT sched 80 materials",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 228,
+    "partId": "8886",
+    "description": "SPARK PLUG SPARK PLUG",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 229,
+    "partId": "7893",
+    "description": "PRODUCTION TUBING 2 3/8 - 4.7 LB - 8 ROUND",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 230,
+    "partId": "3655",
+    "description": "COOLER RENTAL 2'' FLOAT CHAMBER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 231,
+    "partId": "7702",
+    "description": "WELLHEAD - CAP 2-9/16 10M X 2-7/8 TREECAP",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 232,
+    "partId": "6840",
+    "description": "WELLHEAD - TEE 2-1/16 10M TEE",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 233,
+    "partId": "7620",
+    "description": "WELLHEAD VALVE 1-13/16 10M VALVE",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 234,
+    "partId": "8157",
+    "description": "WELLHEAD - SEAL KIT 12-5/8 X 7-5/8 SECSEAL",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 235,
+    "partId": "6924",
+    "description": "WELLHEAD - TUBING TBGHD - T-EBS 12-5/8",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 236,
+    "partId": "6870",
+    "description": "WELLHEAD - ADAPTOR 7-1/16 15M - TM40 ADAPTOR",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 237,
+    "partId": "6858",
+    "description": "SEAL HEATER SEAL",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 238,
+    "partId": "2364",
+    "description": "4130 FLOWLINE 5/8' x 20'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 239,
+    "partId": "1424",
+    "description": "CAP Wellhead Weather Cap 1'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 240,
+    "partId": "8573",
+    "description": "JIGS",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 241,
+    "partId": "2347",
+    "description": "SDV SAFETY SYSTEM SD SDV SS SHUT DOWN VALVE",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 242,
+    "partId": "2447",
+    "description": "BELT WEATHERFORD MAXIMIZER PU BELT",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 243,
+    "partId": "3393",
+    "description": "SEPARATOR BIG JOE REG SEPARATOR REGULATOR KIT",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 244,
+    "partId": "9030",
+    "description": "WELLHEAD - CAGE 11'6' x 11'6' x 9'4'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 245,
+    "partId": "9657",
+    "description": "CHEMICAL PUMP CHEMICAL PUMP NG - NEW",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 246,
+    "partId": "2482",
+    "description": "COMPRESSOR COOLER 5 3/4'  & 3 1/4' X 3' COOLER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 247,
+    "partId": "4502",
+    "description": "CHEMICAL SURFACTANT",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 248,
+    "partId": "1669",
+    "description": "RECORDER HONEYWELL DM DP UNIT",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 249,
+    "partId": "5809",
+    "description": "SEPARATOR DUMP BODY SEPARATOR DUMP BODY 1'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 250,
+    "partId": "9978",
+    "description": "SEPARATOR DV SEAT&TRIM SEPARATOR DUMP VALVE 1'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 251,
+    "partId": "6229",
+    "description": "FILTER - AIR ENGINE AIR FILTER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 252,
+    "partId": "5243",
+    "description": "OIL 40W ENGINE OIL",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 253,
+    "partId": "7742",
+    "description": "ESD-ELECT SAFETY DEVICE ESD VALVE DIAPHRAGM",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 254,
+    "partId": "1133",
+    "description": "SUMP PUMP SUMP PUMP 2'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 255,
+    "partId": "6934",
+    "description": "SEPARATOR FLOW METER KIMRAY FLOW MTR HEAD",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 256,
+    "partId": "6629",
+    "description": "PRESSURE SENSOR FLOWLINE PRESSURE SENSOR",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 257,
+    "partId": "9964",
+    "description": "BATTERY GUARDIAN CHOKE BATTERY",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 258,
+    "partId": "4479",
+    "description": "SEPARATOR FLOW METER KIT KIMRAY FLOW MTR KIT 1'",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 259,
+    "partId": "8587",
+    "description": "SEPARATOR MONITOR HEAD KIMRAY MONITOR HEAD",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 260,
+    "partId": "5825",
+    "description": "COUPLING LOVEJOY COUPLING",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 261,
+    "partId": "6059",
+    "description": "LEVEL SENSOR LSH HP SEP",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 262,
+    "partId": "7422",
+    "description": "HEX PLUG METER HEX PLUG",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 263,
+    "partId": "8382",
+    "description": "PNEUMATIC CONTROLLER 3 PHASE OIL CONTROLLER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 264,
+    "partId": "5432",
+    "description": "WELLHEAD - PIPE PLUG 1/4 WELLHEAD PIPE PLUG",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 265,
+    "partId": "8491",
+    "description": "PLUNGER SINGLE STAGE PLUNGER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 266,
+    "partId": "3071",
+    "description": "PRESSURE REGULATOR MECO 5500",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 267,
+    "partId": "3343",
+    "description": "MOTOR SUMP PUMP MOTOR",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 268,
+    "partId": "9400",
+    "description": "LOC/RD SURFACE MAT GRAVEL WITH CEMENT",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 269,
+    "partId": "6941",
+    "description": "ELECTRICAL 70 Watt",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 270,
+    "partId": "2333",
+    "description": "SEPARATOR - TRANSMITTER SEPARATOR TRANSMITTER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 271,
+    "partId": "9233",
+    "description": "SUPPLY GAS TRANSMITTER SUPPLY GAS TRANSMITTER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 272,
+    "partId": "1404",
+    "description": "WELLHEAD - TRANSMITTER WELLHEAD TRANSMITTER",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 273,
+    "partId": "3476",
+    "description": "TANKS VALVES 3' BALON VALVE",
+    "type": "WELLHEAD PARTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 274,
+    "partId": "TURBO ELBOW",
+    "description": "",
+    "type": "NUTS+BOLTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 275,
+    "partId": "BLOWER FAN",
+    "description": "replacement Fam",
+    "type": "SERVICE A ",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 276,
+    "partId": "103575",
+    "description": "Injector Valve",
+    "type": "Valve",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 277,
+    "partId": "20194",
+    "description": "Gasket Doser Valve 4000",
+    "type": "Gasket",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 278,
+    "partId": "20191",
+    "description": "Machine Gear",
+    "type": "Gear",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 279,
+    "partId": "91205164",
+    "description": "Screw Hex Socket M5x16",
+    "type": "Screws",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 280,
+    "partId": "10391",
+    "description": "Snap Ring A-25",
+    "type": "Rings",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 281,
+    "partId": "102129",
+    "description": "Mineral Circulating Oil",
+    "type": "OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 282,
+    "partId": "102128",
+    "description": "Air Cleaning Element",
+    "type": "BLOWER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 283,
+    "partId": "105578",
+    "description": "Set of V-belts",
+    "type": "BLOWER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 284,
+    "partId": "105580",
+    "description": "Safety Relief Valve",
+    "type": "BLOWER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 285,
+    "partId": "NEW FILTER",
+    "description": "New filter part",
+    "type": "FILTER-OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 286,
+    "partId": "SVC WARRANTY",
+    "description": "",
+    "type": "WARRANTY PERIOD",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 287,
+    "partId": "SNOWPLOW PART",
+    "description": "SNOWPLOW PART",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 288,
+    "partId": "BRI222698",
+    "description": "Key",
+    "type": "KEY",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 289,
+    "partId": "GRINDER",
+    "description": "",
+    "type": "GRINDER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 290,
+    "partId": "OXYGEN",
+    "description": "service oxygen",
+    "type": "CHEMICAL",
+    "status": "NEW",
+    "baseUnit": "SERVICES",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 291,
+    "partId": "FORKLIFT OIL",
+    "description": "FORKLIFT OIL",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 292,
+    "partId": "FORKLIFT GREASE",
+    "description": "FORKLIFT GREASE",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 293,
+    "partId": "FORKLIFT FUEL FILTER",
+    "description": "FORKLIFT FUEL FILTER",
+    "type": "FILTER-FUEL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 294,
+    "partId": "FORKLIFT HYDRAULIC FILTER",
+    "description": "FORKLIFT HYDRAULIC FILTER",
+    "type": "FILTER-OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 295,
+    "partId": "LC-001",
+    "description": "LEATHER CONDITIONER",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "OUNCES WEIGHT",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 296,
+    "partId": "TH-42PH11",
+    "description": "Panasonic 42\" Monitor",
+    "type": "MONITOR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 297,
+    "partId": "LWU501I",
+    "description": "Christie LWU501i - LCD projector - LAN",
+    "type": "PROJECTOR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 298,
+    "partId": "2200-33160-001",
+    "description": "Polycom Soundstructure C16",
+    "type": "CONFERENCE SYSTEM",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 299,
+    "partId": "CTS-MX800D-2CAM-K9",
+    "description": "Cisco MX800D Audio/Video Conference Unit",
+    "type": "CONFERENCE SYSTEM",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 300,
+    "partId": "VENDOR SUPPLIED",
+    "description": "vendor supplied parts. ",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 301,
+    "partId": "SHOP SUPPLIES",
+    "description": "Misc Shop Supplies",
+    "type": "CONSUMABLES",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 302,
+    "partId": "FAILURE 2 KIT",
+    "description": "bearings and shaft",
+    "type": "KIT",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 303,
+    "partId": "4239DF001",
+    "description": "John Deer Engine",
+    "type": "TRANSMISSION",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 304,
+    "partId": "CAMERA",
+    "description": "CAMERA",
+    "type": "MONITOR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 305,
+    "partId": "PART 1234",
+    "description": "Xyz model ",
+    "type": "Gasket",
+    "status": "INACTIVE",
+    "baseUnit": "5 QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 306,
+    "partId": "NEEDS ADDED TO SYSTEM",
+    "description": "",
+    "type": "SERVICE A ",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 307,
+    "partId": "CAMERAS",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 308,
+    "partId": "RED DIESEL",
+    "description": "RED DIESEL",
+    "type": "FLUIDS",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 309,
+    "partId": "EV-100",
+    "description": "Spark Plug",
+    "type": "SPARK PLUG",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 310,
+    "partId": "SLI31SA-TY6",
+    "description": "Duracell Ultra BCI Group 31 Starting Heavy Duty Battery",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 311,
+    "partId": "HD-0987",
+    "description": "High-Speed HDMI Cable, 10 Feet, 1-Pack",
+    "type": "Cable-TV",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 312,
+    "partId": "Filter-122",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 313,
+    "partId": "5347rt",
+    "description": "",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 314,
+    "partId": "RX-353",
+    "description": "Drive Belt",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 315,
+    "partId": "B-09876",
+    "description": "Battery ",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 316,
+    "partId": "Belt1",
+    "description": "",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 317,
+    "partId": "Batt",
+    "description": "",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 318,
+    "partId": "Vendor Part",
+    "description": "",
+    "type": "FUEL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 319,
+    "partId": "Battery",
+    "description": "",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 320,
+    "partId": "Filter",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 321,
+    "partId": "B-03923",
+    "description": "Battery for Cat Backhoe 2015",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 322,
+    "partId": "G0384",
+    "description": "",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 323,
+    "partId": "105-8783",
+    "description": "Belt",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 324,
+    "partId": "111",
+    "description": "belt",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 325,
+    "partId": "9999",
+    "description": "",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 326,
+    "partId": "3512",
+    "description": "khkj",
+    "type": "DOSER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 327,
+    "partId": "1234",
+    "description": "12344",
+    "type": "Cable-TV",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 328,
+    "partId": "124578",
+    "description": "TIRE",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 329,
+    "partId": "123456",
+    "description": "YEA",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 330,
+    "partId": "54-we-t5",
+    "description": "2017 F M2 Tire",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 331,
+    "partId": "Oil 567",
+    "description": "",
+    "type": "OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 332,
+    "partId": "FP-0023",
+    "description": "2011 Dodge Ram Fuel Pump",
+    "type": "FUEL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 333,
+    "partId": "h-05834",
+    "description": "Taillight Bulb",
+    "type": "LIGHTBULBS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 334,
+    "partId": "Door 45ty",
+    "description": "",
+    "type": "LIGHTING",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 335,
+    "partId": "Oil/Filter",
+    "description": "Oil and Filter Change",
+    "type": "OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 336,
+    "partId": "MERG",
+    "description": "Merg",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 337,
+    "partId": "OLDPARTS",
+    "description": "Old",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 338,
+    "partId": "D-Batt 657",
+    "description": "Drone Battery",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 339,
+    "partId": "M93 83E",
+    "description": "Mavic 2 STEALTH",
+    "type": "Propellers",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 340,
+    "partId": "B-DJI-ZENXT",
+    "description": "DJI Zenmuse XT V2 640 Thermal Camera",
+    "type": "Camera",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 341,
+    "partId": "1fd-322343",
+    "description": "ECU Unit",
+    "type": "KIT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 342,
+    "partId": "Test001",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 343,
+    "partId": "234",
+    "description": "345",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 344,
+    "partId": "345",
+    "description": "456",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 345,
+    "partId": "9753",
+    "description": "motor ",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 346,
+    "partId": "Fridge Component",
+    "description": "Fridge Motor",
+    "type": "MLG15M",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 347,
+    "partId": "M-8000",
+    "description": "Band Saw Monitor",
+    "type": "MONITOR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 348,
+    "partId": "SL-00002",
+    "description": "Saw Lever",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 349,
+    "partId": "Filter 10",
+    "description": "HVAC Filter",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 350,
+    "partId": "881245",
+    "description": "Attachment, Magnet 48\"",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 351,
+    "partId": "YGE-300",
+    "description": "Yard Goat Transmission",
+    "type": "TRANSMISSION",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 352,
+    "partId": "CAT-991",
+    "description": "CAT Backhoe Loader Engine - 2015 ",
+    "type": "CAT 420FST",
+    "status": "REBUILT",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 353,
+    "partId": "45T161",
+    "description": "GOODYEAR IT525 INDUSTRIAL LUG R-4 TL",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 354,
+    "partId": "LB-501",
+    "description": "Lightbulbs for construction warehouse",
+    "type": "LIGHTBULBS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 355,
+    "partId": "M785-3",
+    "description": "Motor for Press",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 356,
+    "partId": "p-09921",
+    "description": "Cover Plate",
+    "type": "Plate",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 357,
+    "partId": "Tr7454",
+    "description": "",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 358,
+    "partId": "B-01232",
+    "description": "Bearing",
+    "type": "PLUMBING",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 359,
+    "partId": "AF-183",
+    "description": "Air filter - Vehicle",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 360,
+    "partId": "St-8938",
+    "description": "Loader Steering Wheel",
+    "type": "DOSER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 361,
+    "partId": "TL-001",
+    "description": "Motor on Machine",
+    "type": "TRANSMISSION",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 362,
+    "partId": "T6754",
+    "description": "Grapple for Crane",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 363,
+    "partId": "ty-834543",
+    "description": "",
+    "type": "HOSES",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 364,
+    "partId": "Amazon HDMI Cables",
+    "description": "Misc Part Purchases",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 365,
+    "partId": "1001- Filter",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 366,
+    "partId": "UNIL-001",
+    "description": "M12x70mm Insert Bolt ",
+    "type": "NUTS+BOLTS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 367,
+    "partId": "tye0334",
+    "description": "",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 368,
+    "partId": "Fuel Station #1",
+    "description": "Fuel Station for trucks",
+    "type": "FUEL",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 369,
+    "partId": "FUEL TRUCK #1",
+    "description": "",
+    "type": "FUEL",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 370,
+    "partId": "TS-569-002",
+    "description": "Pedestrian Traffic Signal",
+    "type": "Traffic Signal",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 371,
+    "partId": "W-09382",
+    "description": "Boston Whaler WS",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 372,
+    "partId": "Misc. Parts",
+    "description": "Parts used on Work Order",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 373,
+    "partId": "Raid",
+    "description": "bug killa",
+    "type": "CHEMICAL",
+    "status": "NEW",
+    "baseUnit": "QUART",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 374,
+    "partId": "Air Filter - 6937",
+    "description": "Air filter for John Deere tractor",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Napa",
+    "model": null
+  },
+  {
+    "partKey": 375,
+    "partId": "TY-8976312",
+    "description": "Press Challenger 1500 HP Motor",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 376,
+    "partId": "B-093",
+    "description": "Brake Pads for Dodge",
+    "type": "Brake Pads",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Napa",
+    "model": null
+  },
+  {
+    "partKey": 377,
+    "partId": "TR-50983",
+    "description": "Belt for Press Machine",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 378,
+    "partId": "512210",
+    "description": "thing",
+    "type": "FILTER-OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Napa",
+    "model": null
+  },
+  {
+    "partKey": 379,
+    "partId": "TY-02934",
+    "description": "Forklift Battery ",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 380,
+    "partId": "yte9032",
+    "description": "",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 381,
+    "partId": "Tail Light for my car",
+    "description": "",
+    "type": "LIGHTING",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 382,
+    "partId": "5w30",
+    "description": "",
+    "type": "OIL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 383,
+    "partId": "Filter-123",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Napa",
+    "model": null
+  },
+  {
+    "partKey": 384,
+    "partId": "SP-1000",
+    "description": "Spark plug",
+    "type": "SPARK PLUG",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": null
+  },
+  {
+    "partKey": 385,
+    "partId": "IODINE",
+    "description": "0.1N (0.05M)",
+    "type": "CHEMICAL",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 386,
+    "partId": "B0-323",
+    "description": "",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 387,
+    "partId": "M-5094",
+    "description": "Lathe Motor",
+    "type": "Motor",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 388,
+    "partId": "B-2323543",
+    "description": "Boom",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 389,
+    "partId": "639sok3-0",
+    "description": "",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 390,
+    "partId": "Air Filter 4563",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 391,
+    "partId": "M6756",
+    "description": "Lathe Motor",
+    "type": "BELT",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 392,
+    "partId": "67-YT67",
+    "description": "Motor Gasket",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 393,
+    "partId": "64890-23",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 394,
+    "partId": "CM-0912",
+    "description": "CSP Collector Mirror",
+    "type": "Custom Built",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 395,
+    "partId": "VP-67378",
+    "description": "Vacuum Pump",
+    "type": "Pumps",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 396,
+    "partId": "HP-92132",
+    "description": "Hydraulic Power Supply ",
+    "type": "Power Supply",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 397,
+    "partId": "GF093",
+    "description": "Bolt for Press",
+    "type": "Bolt",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 398,
+    "partId": "34523452345",
+    "description": "Threaded ring",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Napa",
+    "model": null
+  },
+  {
+    "partKey": 399,
+    "partId": "878",
+    "description": "iMCU",
+    "type": "ELECTRICAL",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 400,
+    "partId": "3907",
+    "description": "Sensor Pack",
+    "type": "ELECTRICAL",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 401,
+    "partId": "975",
+    "description": "iPS",
+    "type": "ELECTRICAL",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 402,
+    "partId": "AIRFILT-11",
+    "description": "6mm Air Filter",
+    "type": "FILTER-AIR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 403,
+    "partId": "AIRFILT-12",
+    "description": "10mm Air Filter",
+    "type": "FILTER-AIR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Napa",
+    "model": "NAPA-10"
+  },
+  {
+    "partKey": 404,
+    "partId": "1-001",
+    "description": "iSDU",
+    "type": "Electronic modules",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Frontier",
+    "model": "Frontier"
+  },
+  {
+    "partKey": 405,
+    "partId": "iv71-50",
+    "description": "iMCU",
+    "type": "Electronic modules",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Frontier",
+    "model": "Frontier"
+  },
+  {
+    "partKey": 406,
+    "partId": "B93234",
+    "description": "",
+    "type": "Electronic modules",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 407,
+    "partId": "BATTERY-AA",
+    "description": "AA BATERIES",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "DURACEL",
+    "model": null
+  },
+  {
+    "partKey": 408,
+    "partId": "F58201",
+    "description": "",
+    "type": "FILTER",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 409,
+    "partId": "123",
+    "description": "",
+    "type": "OIL",
+    "status": "USED",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 410,
+    "partId": "HEL-10 LBS",
+    "description": "Helium Gas",
+    "type": "Helium Gas",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": "AIRGAS",
+    "model": "HELIUM Gas"
+  },
+  {
+    "partKey": 411,
+    "partId": "50-8-00-8305",
+    "description": "BREAKER CIRCUIT 70 AMP",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 412,
+    "partId": "50-8-16-7901",
+    "description": "RECEPTACLE MENNEKES",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 413,
+    "partId": "VIT-BAT",
+    "description": "Battery for Philips SureSign Vital Monitor",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 414,
+    "partId": "Test Component 1",
+    "description": "",
+    "type": "FILTER-AIR",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": "Frontier",
+    "model": null
+  },
+  {
+    "partKey": 415,
+    "partId": "test111",
+    "description": "yanmotest",
+    "type": "TIRE",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 416,
+    "partId": "SC5i001",
+    "description": "5 inch screen",
+    "type": "MONITOR",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 417,
+    "partId": "12345",
+    "description": "Asset Check 1",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 418,
+    "partId": "123987",
+    "description": "Asset Part 1 check",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 419,
+    "partId": "12349876",
+    "description": "Check 1",
+    "type": "LIGHTING",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 420,
+    "partId": "Part 1122",
+    "description": "Demo Part (Harsh)",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "DURACEL",
+    "model": null
+  },
+  {
+    "partKey": 421,
+    "partId": "PART123",
+    "description": "Invoice Check 2 Part",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "DURACEL",
+    "model": null
+  },
+  {
+    "partKey": 422,
+    "partId": "PART3",
+    "description": "",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": null
+  },
+  {
+    "partKey": 423,
+    "partId": "HAR-123",
+    "description": "Projector",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 424,
+    "partId": "Server Wires",
+    "description": "Wires for server",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "CASE",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 425,
+    "partId": "ROUTER_CONNECTOR",
+    "description": "Connector for Router and Server",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 426,
+    "partId": "BRISYS-PARTS",
+    "description": "Brisys Serevr and Router Parts",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 427,
+    "partId": "BRISYS-SERVER-PARTS",
+    "description": "Server Parts for Brisys",
+    "type": "ELECTRICAL",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 428,
+    "partId": "AFM-0001",
+    "description": "AFM's Battery",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "SET",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 429,
+    "partId": "test",
+    "description": "",
+    "type": "Helium Gas",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 430,
+    "partId": "001",
+    "description": "New Part",
+    "type": "Helium Gas",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 431,
+    "partId": "1900002202",
+    "description": "Подворын ламп",
+    "type": "LIGHTBULBS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Frontier",
+    "model": "Frontier"
+  },
+  {
+    "partKey": 432,
+    "partId": "1900001540",
+    "description": "Шил өргөгчийн араа /миксер/ R тал",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "China",
+    "model": null
+  },
+  {
+    "partKey": 433,
+    "partId": "1200001544",
+    "description": "Air condition 1.6kw 12m2",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "China",
+    "model": null
+  },
+  {
+    "partKey": 434,
+    "partId": "1200001543",
+    "description": "Air condition 1.6kw",
+    "type": "Other",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "China",
+    "model": null
+  },
+  {
+    "partKey": 435,
+    "partId": "P003",
+    "description": "Part 3",
+    "type": "FUEL",
+    "status": "NEW",
+    "baseUnit": "GALLONS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 436,
+    "partId": "Test00003",
+    "description": "Special filter ",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Zoomlion",
+    "model": null
+  },
+  {
+    "partKey": 437,
+    "partId": "1900002204",
+    "description": "Ламп, H4,12V",
+    "type": "LIGHTBULBS",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "China",
+    "model": null
+  },
+  {
+    "partKey": 438,
+    "partId": "test1",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 439,
+    "partId": "Part-000001",
+    "description": "Tesla Battery",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 440,
+    "partId": "Test-00002",
+    "description": "Tesla Battery ",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 441,
+    "partId": "Test-00003",
+    "description": "Tesla Battery",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 442,
+    "partId": "gfdgdgdf",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 443,
+    "partId": "ISQ PART",
+    "description": "iSquared Part",
+    "type": "BLOWER",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Danfoss",
+    "model": "DSV 10"
+  },
+  {
+    "partKey": 444,
+    "partId": "ISQ_PART_1",
+    "description": "ISQ part 1",
+    "type": "Battery",
+    "status": "NEW",
+    "baseUnit": "BOX",
+    "brand": "DURACEL",
+    "model": null
+  },
+  {
+    "partKey": 445,
+    "partId": "HAR1",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 446,
+    "partId": "HAR_11",
+    "description": "Harsh 11",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "BOX",
+    "brand": "Philips",
+    "model": null
+  },
+  {
+    "partKey": 447,
+    "partId": "HARSH11",
+    "description": "Harsh11",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "BOX",
+    "brand": "Philips",
+    "model": "PHL-BAT"
+  },
+  {
+    "partKey": 448,
+    "partId": "AA-0001",
+    "description": "A社エアコンフィルター",
+    "type": "エアコンフィルター",
+    "status": "NEW",
+    "baseUnit": "枚",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 449,
+    "partId": "AA_0002",
+    "description": "エアコンフィルター2",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "枚",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 450,
+    "partId": "COMP_HAR",
+    "description": "",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": null,
+    "model": null
+  },
+  {
+    "partKey": 451,
+    "partId": "Tire for Volvo",
+    "description": "",
+    "type": "Tires",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": "China",
+    "model": null
+  },
+  {
+    "partKey": 452,
+    "partId": "Filter001-Hvac",
+    "description": "Filter001-Hvac",
+    "type": "FILTER",
+    "status": "NEW",
+    "baseUnit": "LITERS",
+    "brand": "AIRGAS",
+    "model": "HELIUM Gas"
+  },
+  {
+    "partKey": 453,
+    "partId": "GSTI-Pump Gauge",
+    "description": "Pump meter- Gauge",
+    "type": "Pumps",
+    "status": "NEW",
+    "baseUnit": "EACH",
+    "brand": "Frontier",
+    "model": "Frontier"
+  }
+]

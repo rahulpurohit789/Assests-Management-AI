@@ -12,19 +12,23 @@ class Config:
     def __init__(self):
         """Initialize configuration with default values."""
         # File paths
-        self.JSON_FILE_PATH = "JsonData/Data.json"
+        # Keep a primary JSON file path for backward compatibility (used in sidebar stats)
+        # Point to Assets as the representative dataset
+        self.JSON_FILE_PATH = "JsonData/Assests.json"
+        # New: base directory containing all related JSON sources
+        self.JSON_DIR = "JsonData"
         self.FAISS_INDEX_PATH = "./faiss_index"
         
         # AI Model settings
-        # FastEmbed recommended small English model
-        self.EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
+        # Use sentence-transformers directly (more compatible)
+        self.EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
         self.GROQ_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
         
         # Vector store settings
-        self.VECTOR_STORE_K = 5  # Number of documents to retrieve
+        self.VECTOR_STORE_K = 50  # Increase recall for list-style queries
         
         # LLM settings
-        self.LLM_TEMPERATURE = 0.1
+        self.LLM_TEMPERATURE = 0.7
         self.LLM_MAX_TOKENS = 2000
     
     def get_groq_api_key(self):
@@ -37,6 +41,8 @@ class Config:
         
         if not Path(self.JSON_FILE_PATH).exists():
             errors.append(f"JSON file not found: {self.JSON_FILE_PATH}")
+        if not Path(self.JSON_DIR).exists():
+            errors.append(f"JSON directory not found: {self.JSON_DIR}")
         
         if not self.get_groq_api_key():
             errors.append("GROQ_API_KEY not set in environment variables")

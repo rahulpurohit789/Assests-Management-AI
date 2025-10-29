@@ -1,0 +1,506 @@
+[
+  {
+    "phoneKey": 1,
+    "contactKey": 2,
+    "phoneNumber": "801-555-1212",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 3,
+    "contactKey": 3,
+    "phoneNumber": "801-555-2121",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 5,
+    "contactKey": 4,
+    "phoneNumber": "801-555-3131",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 6,
+    "contactKey": 4,
+    "phoneNumber": "801-555-3132",
+    "phoneType": "CELL",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 7,
+    "contactKey": 5,
+    "phoneNumber": "801-555-4141",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 9,
+    "contactKey": 6,
+    "phoneNumber": "801-555-5151",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 11,
+    "contactKey": 7,
+    "phoneNumber": "801-555-6161",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 13,
+    "contactKey": 8,
+    "phoneNumber": "801-555-7171",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 15,
+    "contactKey": 9,
+    "phoneNumber": "801-555-8181",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 17,
+    "contactKey": 10,
+    "phoneNumber": "801-555-9191",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 19,
+    "contactKey": 11,
+    "phoneNumber": "801-256-0010",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 20,
+    "contactKey": 12,
+    "phoneNumber": "801-972-5809",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 21,
+    "contactKey": 13,
+    "phoneNumber": "801-305-3761",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 22,
+    "contactKey": 14,
+    "phoneNumber": "801-966-2381",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 23,
+    "contactKey": 15,
+    "phoneNumber": "801-628-2238",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 24,
+    "contactKey": 16,
+    "phoneNumber": "801-974-0511",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 25,
+    "contactKey": 17,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 26,
+    "contactKey": 30,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 27,
+    "contactKey": 19,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 28,
+    "contactKey": 30,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 29,
+    "contactKey": 21,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 30,
+    "contactKey": 22,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 31,
+    "contactKey": 46,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 32,
+    "contactKey": 24,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 33,
+    "contactKey": 25,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 34,
+    "contactKey": 45,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 35,
+    "contactKey": 27,
+    "phoneNumber": "801-553-5353",
+    "phoneType": "BUSINESS",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 36,
+    "contactKey": 37,
+    "phoneNumber": "801-555-1212",
+    "phoneType": "HOME",
+    "phoneLabel": "",
+    "isDefault": false
+  },
+  {
+    "phoneKey": 37,
+    "contactKey": 45,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 38,
+    "contactKey": 25,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 39,
+    "contactKey": 46,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 40,
+    "contactKey": 25,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 41,
+    "contactKey": 22,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 42,
+    "contactKey": 30,
+    "phoneNumber": "801-441-1696",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 43,
+    "contactKey": 78,
+    "phoneNumber": "832.930.4454",
+    "phoneType": "HOME",
+    "phoneLabel": "HOME",
+    "isDefault": false
+  },
+  {
+    "phoneKey": 44,
+    "contactKey": 78,
+    "phoneNumber": "702.845.2886",
+    "phoneType": "CELL",
+    "phoneLabel": "CELL",
+    "isDefault": true
+  },
+  {
+    "phoneKey": 45,
+    "contactKey": 95,
+    "phoneNumber": "8015563376",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 46,
+    "contactKey": 96,
+    "phoneNumber": "555-555-1234",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 47,
+    "contactKey": 97,
+    "phoneNumber": "801-239-6673",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 48,
+    "contactKey": 101,
+    "phoneNumber": "801-568-6584",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 49,
+    "contactKey": 103,
+    "phoneNumber": "7028452886",
+    "phoneType": "CELL",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 50,
+    "contactKey": 119,
+    "phoneNumber": "801-566-3776",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 51,
+    "contactKey": 106,
+    "phoneNumber": "5732599044",
+    "phoneType": "HOME",
+    "phoneLabel": "HOME",
+    "isDefault": false
+  },
+  {
+    "phoneKey": 52,
+    "contactKey": 121,
+    "phoneNumber": "385-213-5392",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 53,
+    "contactKey": 126,
+    "phoneNumber": "801-555-5545",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 54,
+    "contactKey": 189,
+    "phoneNumber": "555-123-0000",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 55,
+    "contactKey": 200,
+    "phoneNumber": "0215903900",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 56,
+    "contactKey": 201,
+    "phoneNumber": "0730983445",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 57,
+    "contactKey": 248,
+    "phoneNumber": "401-895-7836",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 58,
+    "contactKey": 252,
+    "phoneNumber": "+61408548435",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 59,
+    "contactKey": 253,
+    "phoneNumber": "+61408548435",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 60,
+    "contactKey": 254,
+    "phoneNumber": "888-555-2121",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 61,
+    "contactKey": 261,
+    "phoneNumber": "888-555-1414",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 62,
+    "contactKey": 203,
+    "phoneNumber": "1234567890",
+    "phoneType": "CELL",
+    "phoneLabel": null,
+    "isDefault": false
+  },
+  {
+    "phoneKey": 63,
+    "contactKey": 203,
+    "phoneNumber": "1987654320",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 64,
+    "contactKey": 273,
+    "phoneNumber": "82823943",
+    "phoneType": "CELL",
+    "phoneLabel": "CELL",
+    "isDefault": false
+  },
+  {
+    "phoneKey": 65,
+    "contactKey": 273,
+    "phoneNumber": "82823943",
+    "phoneType": "HOME",
+    "phoneLabel": "CELL",
+    "isDefault": true
+  },
+  {
+    "phoneKey": 66,
+    "contactKey": 264,
+    "phoneNumber": "+6596600631",
+    "phoneType": "CELL",
+    "phoneLabel": "CELL",
+    "isDefault": true
+  },
+  {
+    "phoneKey": 67,
+    "contactKey": 295,
+    "phoneNumber": "888-777-6666",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 68,
+    "contactKey": 298,
+    "phoneNumber": "123456789",
+    "phoneType": null,
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 69,
+    "contactKey": 310,
+    "phoneNumber": "94252948",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 70,
+    "contactKey": 311,
+    "phoneNumber": "99400098",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  },
+  {
+    "phoneKey": 71,
+    "contactKey": 312,
+    "phoneNumber": "80022391",
+    "phoneType": "HOME",
+    "phoneLabel": null,
+    "isDefault": true
+  }
+]
