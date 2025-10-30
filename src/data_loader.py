@@ -168,8 +168,9 @@ class DataLoader:
                 lines.append(f"Total service items: {len(service_items)}")
                 lines.append("")
                 if entities:
-                    lines.append("Assets by entity:")
-                    for k, v in sorted(entities.items()):
+                    lines.append("Assets by entity (sorted by count, highest first):")
+                    # Sort by count descending so highest counts appear first
+                    for k, v in sorted(entities.items(), key=lambda x: x[1], reverse=True):
                         lines.append(f"  {k}: {v}")
                 if statuses:
                     lines.append("Assets by status:")

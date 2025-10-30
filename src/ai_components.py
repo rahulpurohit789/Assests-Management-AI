@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Optional, Tuple, Any
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -70,20 +70,20 @@ class AIComponents:
             return None
     
     @st.cache_resource
-    def create_llm(_self) -> Optional[ChatGroq]:
-        """Create ChatGroq LLM instance."""
+    def create_llm(_self) -> Optional[ChatOpenAI]:
+        """Create OpenAI LLM instance."""
         try:
-            api_key = _self.config.get_groq_api_key()
+            api_key = _self.config.get_openai_api_key()
             if not api_key:
-                _self.last_error = "Missing GROQ_API_KEY in environment variables"
+                _self.last_error = "Missing OPENAI_API_KEY in environment variables"
                 print(_self.last_error)
                 return None
             
-            llm = ChatGroq(
-                model=_self.config.GROQ_MODEL,
+            llm = ChatOpenAI(
+                model=_self.config.OPENAI_MODEL,
                 temperature=_self.config.LLM_TEMPERATURE,
                 max_tokens=_self.config.LLM_MAX_TOKENS,
-                groq_api_key=api_key
+                api_key=api_key
             )
             
             return llm
@@ -92,14 +92,14 @@ class AIComponents:
             import traceback
             _self.last_error = (
                 "LLM initialization failed\n"
-                f"Model: {_self.config.GROQ_MODEL}\n"
+                f"Model: {_self.config.OPENAI_MODEL}\n"
                 f"Error: {e}\n"
                 f"Traceback:\n{traceback.format_exc()}"
             )
             print(_self.last_error)
             return None
     
-    def create_ai_chain(self, vectorstore: FAISS, llm: ChatGroq) -> Tuple[Optional[Any], Optional[Any]]:
+    def create_ai_chain(self, vectorstore: FAISS, llm: ChatOpenAI) -> Tuple[Optional[Any], Optional[Any]]:
         """Create a retrieval-augmented generation chain using the vector store."""
         try:
             retriever = vectorstore.as_retriever(search_kwargs={"k": self.config.VECTOR_STORE_K})
@@ -133,7 +133,9 @@ class AIComponents:
                     "1. **Count Queries** (how many, count, total):\n"
                     "   - ALWAYS use GLOBAL SUMMARY documents when present\n"
                     "   - Extract exact numbers, never estimate\n"
-                    "   - Reference the specific count: 'According to GLOBAL SUMMARY: Total assets: 424'\n\n"
+                    "   - Reference the specific count: 'According to GLOBAL SUMMARY: Total assets: 424'\n"
+                    "   - For 'most' or 'highest' queries, compare ALL entities in the data before answering\n"
+                    "   - If comparing counts, verify ALL relevant entries to ensure accuracy\n\n"
                     
                     "2. **List Queries** (list all, show all):\n"
                     "   - Provide all relevant DOC entries with their IDs\n"
@@ -144,6 +146,7 @@ class AIComponents:
                     "   - Identify patterns across documents\n"
                     "   - Highlight anomalies or notable findings\n"
                     "   - Provide business-relevant context for numbers\n"
+                    "   - For comparative queries (most, highest, largest), consider ALL available data\n"
                     "   - Suggest actionable recommendations when appropriate\n\n"
                     
                     "4. **Detail Queries** (tell me about, details of):\n"
@@ -157,15 +160,27 @@ class AIComponents:
                     "   - Include entity IDs for traceability\n\n"
                     
                     "## General Rules:\n"
+                    "- **ANSWER FIRST, EXPLAIN LATER**: Start with the direct answer immediately\n"
+                    "- **BE ULTRA CONCISE**: If user asks a simple question, give a simple, direct answer (1-3 sentences)\n"
+                    "- **NO UNNECESSARY DETAILS**: Don't explain your process unless asked for details\n"
+                    "- **NO STEP-BY-STEP**: Avoid 'We will look for...', 'Customer Details:', 'Relevant Documents:', etc.\n"
+                    "- **NO RECOMMENDATIONS UNLESS ASKED**: Only provide suggestions if user asks for them\n"
+                    "- **ONLY EXPAND WHEN REQUESTED**: If user wants more details, then provide them\n"
+                    "- Use **bold** for key facts, bullet points for lists\n"
                     "- Be precise with numbers - extract exact values from context\n"
+                    "- **CRITICAL: For comparative queries** (most, highest, largest, top, etc.), ensure you have reviewed ALL relevant data before giving a definitive answer. If comparing entity counts, verify counts for ALL entities.\n"
                     "- Never say 'None' if data exists - search all DOC types\n"
-                    "- Always include relevant IDs (assetId, workOrderNumber, invoiceNumber, etc.)\n"
-                    "- If information is incomplete, acknowledge it but provide what you can\n"
-                    "- Provide business context - explain what the numbers mean\n"
-                    "- For translation requests, maintain data accuracy across all languages\n\n"
+                    "- Always include relevant IDs (assetId, workOrderNumber, etc.)\n"
+                    "- If information is incomplete, acknowledge it briefly\n"
+                    "- For translation requests, maintain data accuracy\n\n"
                     
-                    "Remember: You're helping business users understand their operations. "
-                    "Be clear, precise, and helpful."
+                    "## Response Style:\n"
+                    "- Simple questions → **Direct answer** (1-2 sentences max)\n"
+                    "- List questions → **List items** with IDs (no explanations needed)\n"
+                    "- Count questions → **Number** + 1 sentence context max\n"
+                    "- Detail requests → **Give details** only when user asks 'tell me more', 'details', 'explain', etc.\n\n"
+                    
+                    "CRITICAL: Think like a smart assistant - give the shortest possible answer that answers the question. No fluff, no process explanations. Just the answer."
                 ).replace("{k}", str(self.config.VECTOR_STORE_K))
             )
 

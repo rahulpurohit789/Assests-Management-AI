@@ -7,7 +7,7 @@ streamlit>=1.36.0,<2.0.0
 # LangChain ecosystem (avoid root 'langchain' to prevent conflicts)
 # Align on langchain-core>=0.2 which requires langsmith>=0.1,<0.2
 langchain-community>=0.2.0,<0.4.0
-langchain-groq>=0.2.0,<0.3.0
+langchain-openai>=0.2.0,<0.3.0
 langsmith>=0.1.0,<0.2.0
 
 # Vector store and embeddings

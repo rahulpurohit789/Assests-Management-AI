@@ -4,7 +4,7 @@ AI-Powered Asset Management Chatbot
 ==================================
 
 A Streamlit application that provides intelligent querying of asset data
-using LangChain, HuggingFace embeddings, and ChatGroq AI.
+using LangChain, HuggingFace embeddings, and OpenAI.
 
 Features:
 - Natural language understanding

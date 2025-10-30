@@ -70,7 +70,7 @@ streamlit run app.py
 3. **Go to "Secrets"** tab
 4. **Add your environment variables**:
    ```toml
-   GROQ_API_KEY = "your_actual_groq_api_key_here"
+   OPENAI_API_KEY = "your_actual_openai_api_key_here"
    ```
 
 ### Step 4: Deploy

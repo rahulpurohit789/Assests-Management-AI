@@ -1,6 +1,6 @@
 # 🤖 AI Asset Management Chatbot
 
-A powerful Streamlit application that provides intelligent querying of asset data using natural language. Built with LangChain, HuggingFace embeddings, and ChatGroq AI.
+A powerful Streamlit application that provides intelligent querying of asset data using natural language. Built with LangChain, HuggingFace embeddings, and OpenAI.
 
 ## ✨ Features
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ### 2. Set Up Environment
 Create a `.env` file in the project root:
 ```bash
-GROQ_API_KEY=your_groq_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### 3. Run the Application
@@ -75,7 +75,7 @@ Try these natural language queries:
 - **AI Framework**: LangChain
 - **Embeddings**: HuggingFace Transformers
 - **Vector Store**: FAISS
-- **LLM**: ChatGroq (Meta Llama)
+- **LLM**: OpenAI Chat models
 - **Data**: JSON
 
 ## 📊 Data Format
@@ -106,10 +106,10 @@ The application expects a JSON file with an array of asset objects:
 ]
 ```
 
-## 🔑 Getting Your Groq API Key
+## 🔑 Getting Your OpenAI API Key
 
-1. Visit [console.groq.com](https://console.groq.com)
-2. Sign up or log in
+1. Visit [platform.openai.com](https://platform.openai.com)
+2. Sign up or log in, then create an API key
 3. Go to "API Keys" section
 4. Create a new API key
 5. Copy the key and add it to your `.env` file

@@ -28,64 +28,128 @@ class UIComponents:
     
     def display_title(self):
         """Display the main title and description."""
-        # Custom CSS for better styling
+        # Professional ChatGPT-like styling
         st.markdown("""
         <style>
+        /* Remove Streamlit branding and padding */
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        .stApp {margin-top: -80px;}
+        
+        /* Main title - smaller, professional */
         .main-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1f2937;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #202123;
             text-align: center;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
+            margin-top: -0.5rem;
         }
         .subtitle {
-            font-size: 1.1rem;
-            color: #6b7280;
+            font-size: 0.875rem;
+            color: #8e8ea0;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
+        
+        /* Chat container - wider, cleaner */
         .chat-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
+            padding: 0 1rem;
         }
-        .message-user {
-            background-color: #f3f4f6;
-            padding: 1rem;
-            border-radius: 1rem 1rem 0.25rem 1rem;
-            margin: 0.5rem 0;
-            margin-left: 2rem;
+        
+        /* Response text - smaller, professional font */
+        .stMarkdown {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
         }
-        .message-assistant {
-            background-color: #ffffff;
-            padding: 1rem;
-            border-radius: 1rem 1rem 1rem 0.25rem;
-            margin: 0.5rem 0;
-            margin-right: 2rem;
-            border: 1px solid #e5e7eb;
+        
+        /* Markdown content - compact */
+        .stMarkdown h1 {font-size: 1.5rem !important; margin-top: 1rem; margin-bottom: 0.5rem;}
+        .stMarkdown h2 {font-size: 1.25rem !important; margin-top: 0.75rem; margin-bottom: 0.4rem;}
+        .stMarkdown h3 {font-size: 1.1rem !important; margin-top: 0.6rem; margin-bottom: 0.3rem;}
+        .stMarkdown p {margin-bottom: 0.5rem; font-size: 14px !important;}
+        .stMarkdown ul, .stMarkdown ol {margin-bottom: 0.5rem; padding-left: 1.5rem;}
+        .stMarkdown li {margin-bottom: 0.3rem; font-size: 14px !important;}
+        
+        /* Code blocks - smaller */
+        .stMarkdown code {
+            font-size: 13px !important;
+            padding: 2px 6px !important;
         }
-        .example-button {
-            background-color: #f9fafb;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            padding: 0.5rem 1rem;
-            margin: 0.25rem;
-            cursor: pointer;
-            transition: all 0.2s;
+        .stMarkdown pre code {
+            font-size: 12px !important;
+            padding: 12px !important;
         }
-        .example-button:hover {
-            background-color: #f3f4f6;
-            border-color: #9ca3af;
+        
+        /* Chat input - modern look */
+        .stTextInput > div > div > input {
+            font-size: 15px !important;
+            padding: 12px 16px !important;
+            border-radius: 12px !important;
+        }
+        
+        /* Sidebar - cleaner */
+        [data-testid="stSidebar"] {
+            background-color: #f7f7f8;
+        }
+        
+        .sidebar-header {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8e8ea0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Compact tables */
+        .stDataFrame {
+            font-size: 13px !important;
+        }
+        
+        /* Example queries - cleaner ChatGPT style */
+        .example-queries-container {
+            margin: 2rem 0;
+        }
+        .example-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #8e8ea0;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .stButton > button {
+            width: 100%;
+            padding: 0.5rem 0.75rem !important;
+            font-size: 14px !important;
+            background-color: #f7f7f8 !important;
+            color: #202123 !important;
+            border: 1px solid #e5e7eb !important;
+            border-radius: 8px !important;
+            text-align: left !important;
+            transition: all 0.2s !important;
+            margin: 0.25rem 0 !important;
+        }
+        .stButton > button:hover {
+            background-color: #f3f4f6 !important;
+            border-color: #d1d5db !important;
+        }
+        .stButton > button:active {
+            background-color: #e5e7eb !important;
         }
         </style>
         """, unsafe_allow_html=True)
         
-        st.markdown('<h1 class="main-title">Asset Management Assistant</h1>', unsafe_allow_html=True)
-        st.markdown('<p class="subtitle">Ask me anything about your assets. I can help you find, analyze, and understand your asset data.</p>', unsafe_allow_html=True)
+        # Minimal title - ChatGPT style
+        st.markdown('<div style="text-align: center; margin-bottom: 1.5rem;"><h1 class="main-title">Asset Analyst AI</h1></div>', unsafe_allow_html=True)
     
     def display_sidebar(self, config):
         """Display a minimal sidebar with basic info."""
         with st.sidebar:
-            st.markdown("### 📊 Quick Stats")
+            st.markdown('<div class="sidebar-header">📊 Quick Stats</div>', unsafe_allow_html=True)
             
             # Get basic stats without showing technical details
             from pathlib import Path
@@ -108,7 +172,7 @@ class UIComponents:
                 st.warning("No data file found")
             
             st.markdown("---")
-            st.markdown("### ⚙️ AI Settings")
+            st.markdown('<div class="sidebar-header">⚙️ AI Settings</div>', unsafe_allow_html=True)
             # Runtime controls (no hardcoding logic)
             temp = st.slider("Model temperature", 0.0, 1.0, float(config.LLM_TEMPERATURE), 0.05,
                              help="Lower = more deterministic; higher = more creative")
@@ -119,7 +183,7 @@ class UIComponents:
             config.VECTOR_STORE_K = int(k)
 
             st.markdown("---")
-            st.markdown("### 💡 Tips")
+            st.markdown('<div class="sidebar-header">💡 Tips</div>', unsafe_allow_html=True)
             st.markdown("• Ask specific questions about your assets")
             st.markdown("• Use asset IDs for precise searches")
             st.markdown("• Ask for summaries or comparisons")
@@ -134,20 +198,8 @@ class UIComponents:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
         
-        # Example queries
-        if not st.session_state.messages:
-            st.markdown("### 💡 Try asking me:")
-            
-            # Create example buttons in a grid
-            cols = st.columns(2)
-            for i, query in enumerate(self.example_queries):
-                with cols[i % 2]:
-                    if st.button(f"💡 {query}", key=f"example_{i}", help="Click to use this example"):
-                        st.session_state.user_query = query
-                        st.rerun()
-        
         # Chat input
-        if prompt := st.chat_input("Ask me anything about your assets..."):
+        if prompt := st.chat_input("Ask about your assets..."):
             # Add user message to chat history
             st.session_state.messages.append({"role": "user", "content": prompt})
             
@@ -187,10 +239,10 @@ class UIComponents:
         st.markdown('</div>', unsafe_allow_html=True)
     
     def display_footer(self):
-        """Display a minimal footer."""
+        """Display a minimal footer - ChatGPT style."""
         st.markdown("---")
         st.markdown(
-            '<div style="text-align: center; color: #6b7280; font-size: 0.9rem;">Asset Management Assistant • Powered by AI</div>', 
+            '<div style="text-align: center; color: #8e8ea0; font-size: 0.75rem; padding: 1rem 0;">Asset Analyst AI • Powered by LLM</div>', 
             unsafe_allow_html=True
         )
     

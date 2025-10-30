@@ -22,7 +22,7 @@ class Config:
         # AI Model settings
         # Use sentence-transformers directly (more compatible)
         self.EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-        self.GROQ_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+        self.OPENAI_MODEL = "gpt-4o-mini"
         
         # Vector store settings
         self.VECTOR_STORE_K = 50  # Increase recall for list-style queries
@@ -31,9 +31,9 @@ class Config:
         self.LLM_TEMPERATURE = 0.7
         self.LLM_MAX_TOKENS = 2000
     
-    def get_groq_api_key(self):
-        """Get GROQ API key from environment variables."""
-        return os.getenv("GROQ_API_KEY")
+    def get_openai_api_key(self):
+        """Get OpenAI API key from environment variables."""
+        return os.getenv("OPENAI_API_KEY")
     
     def validate_config(self):
         """Validate that all required configuration is present."""
@@ -44,7 +44,7 @@ class Config:
         if not Path(self.JSON_DIR).exists():
             errors.append(f"JSON directory not found: {self.JSON_DIR}")
         
-        if not self.get_groq_api_key():
-            errors.append("GROQ_API_KEY not set in environment variables")
+        if not self.get_openai_api_key():
+            errors.append("OPENAI_API_KEY not set in environment variables")
         
         return errors
