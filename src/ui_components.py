@@ -1,5 +1,5 @@
 """
-UI components module for the Asset Management Assistant.
+UI components module for the Eptura Asset AI.
 Handles all Streamlit UI elements and interactions with a clean, ChatGPT-like interface.
 """
 
@@ -77,17 +77,17 @@ class UIComponents:
         st.markdown("""
         <style>
         .main-title {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 600;
             color: #1f2937;
-            text-align: center;
-            margin-bottom: 0.5rem;
+            text-align: left;
+            margin-bottom: 0.25rem;
         }
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 0.875rem;
             color: #6b7280;
-            text-align: center;
-            margin-bottom: 2rem;
+            text-align: left;
+            margin-bottom: 1rem;
         }
         .chat-container {
             max-width: 800px;
@@ -106,6 +106,49 @@ class UIComponents:
             border-radius: 1rem 1rem 1rem 0.25rem;
             margin: 0.5rem 0;
             margin-right: 2rem;
+            border: 1px solid #e5e7eb;
+        }
+        /* Chat message alignment - User messages on right, Assistant on left */
+        [data-testid="stChatMessage"] {
+            display: flex;
+        }
+        [data-testid="stChatMessage"][data-message-author="user"] {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+        [data-testid="stChatMessage"][data-message-author="assistant"] {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        /* Message content containers */
+        [data-testid="stChatMessage"][data-message-author="user"] > div {
+            max-width: 70%;
+            margin-left: auto;
+        }
+        [data-testid="stChatMessage"][data-message-author="assistant"] > div {
+            max-width: 70%;
+            margin-right: auto;
+        }
+        /* Avatar styling */
+        [data-testid="stChatMessage"] .stChatAvatar {
+            flex-shrink: 0;
+        }
+        [data-testid="stChatMessage"][data-message-author="user"] .stChatAvatar {
+            margin-left: 0.75rem;
+            margin-right: 0;
+        }
+        [data-testid="stChatMessage"][data-message-author="assistant"] .stChatAvatar {
+            margin-right: 0.75rem;
+            margin-left: 0;
+        }
+        /* Message bubbles styling */
+        [data-testid="stChatMessage"][data-message-author="user"] [class*="message"] {
+            background-color: #f3f4f6;
+            border-radius: 1rem 1rem 0.25rem 1rem;
+        }
+        [data-testid="stChatMessage"][data-message-author="assistant"] [class*="message"] {
+            background-color: #ffffff;
+            border-radius: 1rem 1rem 1rem 0.25rem;
             border: 1px solid #e5e7eb;
         }
         .example-button {
@@ -208,13 +251,13 @@ class UIComponents:
         </style>
         """, unsafe_allow_html=True)
         
-        st.markdown('<h1 class="main-title">Asset Management Assistant</h1>', unsafe_allow_html=True)
+        st.markdown('<div class="main-title"><strong>Eptura Asset AI</strong></div>', unsafe_allow_html=True)
         st.markdown('<p class="subtitle">Ask me anything about your assets. I can help you find, analyze, and understand your asset data.</p>', unsafe_allow_html=True)
     
     def display_sidebar(self, config):
         """Sidebar with New chat button and list of ephemeral chats."""
         with st.sidebar:
-            st.markdown("### Chats")
+            st.markdown('<strong style="font-size: 1rem;">Chats</strong>', unsafe_allow_html=True)
             active = self._get_active_chat()
             disable_new = active is not None and len(active.get("messages", [])) == 0 and len(st.session_state.chats) > 0
             if st.button("➕ New chat", use_container_width=True, disabled=disable_new, help=("Finish the current chat before creating a new one" if disable_new else None)):
@@ -238,7 +281,7 @@ class UIComponents:
                         use_container_width=True,
                     )
 
-            st.markdown("### 💡 Tips")
+            st.markdown('<strong style="font-size: 1rem;">💡 Tips</strong>', unsafe_allow_html=True)
             st.markdown("• Ask specific questions about your assets")
             st.markdown("• Use asset IDs for precise searches")
             st.markdown("• Ask for summaries or comparisons")
@@ -260,11 +303,12 @@ class UIComponents:
         
         # Chat input
         if prompt := st.chat_input("Ask me anything about your assets..."):
+            # Name chat immediately when user submits first message
+            if len(active_chat["messages"]) == 0:
+                active_chat["title"] = (prompt.strip() or "New chat")[:48]
+            
             # Add user message to current chat
             active_chat["messages"].append({"role": "user", "content": prompt})
-            # Name chat after first user message
-            if len(active_chat["messages"]) == 1:
-                active_chat["title"] = (prompt.strip() or "New chat")[:48]
             
             # Display user message
             with st.chat_message("user"):
@@ -294,12 +338,10 @@ class UIComponents:
                         active_chat["messages"].append({"role": "assistant", "content": error_msg})
         
         st.markdown('</div>', unsafe_allow_html=True)
-    
-    def display_footer(self):
-        """Display a minimal footer."""
-        st.markdown("---")
+        
+        # Display footer below the chat input
         st.markdown(
-            '<div style="text-align: center; color: #6b7280; font-size: 0.9rem;">Asset Management Assistant • Powered by AI</div>', 
+            '<div style="text-align: center; color: #6b7280; font-size: 0.85rem; margin-top: 1rem;">Eptura Asset AI • Powered by Sector7</div>', 
             unsafe_allow_html=True
         )
     

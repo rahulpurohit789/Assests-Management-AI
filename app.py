@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI-Powered Asset Management Chatbot
+AI-Powered Eptura Asset Management Chatbot
 ==================================
 
 A Streamlit application that provides intelligent querying of asset data
@@ -32,7 +32,7 @@ def main():
     """Main application entry point."""
     # Configure Streamlit page
     st.set_page_config(
-        page_title="Asset Management Assistant",
+        page_title="Eptura Asset AI",
         page_icon="💼",
         layout="centered",
         initial_sidebar_state="expanded"
@@ -91,11 +91,8 @@ def main():
                     st.code(ai_components.last_error)
             st.stop()
     
-    # Display chat interface
+    # Display chat interface (includes footer)
     ui_components.display_chat_interface(ai_chain, retriever)
-    
-    # Display footer
-    ui_components.display_footer()
 
 if __name__ == "__main__":
     main()

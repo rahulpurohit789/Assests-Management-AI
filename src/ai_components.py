@@ -132,16 +132,19 @@ class AIComponents:
                     
                     "## Response Style (Default):\n"
                     "- Be concise. Default to bullets or compact tables when helpful.\n"
-                    "- No preamble or filler. Only answer the question asked.\n"
+                    "- NO PREAMBLE. Do NOT mention where you got the data from. Just answer directly.\n"
+                    "- NO source citations like 'GLOBAL SUMMARY document' or 'according to the data'.\n"
                     "- Headings only when explicitly requested.\n"
                     "- For entity lists, use one bullet per entity.\n"
-                    "- For structured data, prefer a small Markdown table.\n\n"
+                    "- For structured data, prefer a small Markdown table.\n"
+                    "- Start your response immediately with the answer.\n\n"
 
                     "## Analytical Response Guidelines:\n"
                     "1. Count Queries (how many, count, total):\n"
                     "   - Prefer GLOBAL SUMMARY when present.\n"
                     "   - Extract exact numbers only.\n"
-                    "   - Answer with just the metric, e.g., Total customers: 28.\n\n"
+                    "   - Answer with just the metric, e.g., Total customers: 28.\n"
+                    "   - MANDATORY: Leave a blank line after the list before any conclusion.\n\n"
 
                     "2. List Queries (list all, show all):\n"
                     "   - Return bullets only, no commentary.\n"
@@ -150,13 +153,18 @@ class AIComponents:
                     "   - Do NOT include internal keys (contactKey, customerKey, vendorKey, addressKey, phoneKey).\n"
                     "   - Use hyphen separated inline format: Name - id, email, status.\n"
                     "   - If a field is missing/null, use '-'.\n"
-                    "   - If the summary states Total X: N, output exactly N items.\n\n"
+                    "   - If the summary states Total X: N, output exactly N items.\n"
+                    "   - ALWAYS use proper markdown bullets: start each item with '- ' on a NEW LINE.\n"
+                    "   - NEVER combine multiple items on the same line.\n"
+                    "   - Add a blank line before conclusions or summary sentences.\n\n"
 
                     "3. Aggregations (sum, average, min, max, median, group by):\n"
                     "   - Calculate strictly from the provided context; do not invent values.\n"
                     "   - State units and currency when known.\n"
                     "   - Show a one line formula summary when non-trivial, e.g., Sum of purchaseCost across assets.\n"
                     "   - When grouping, present a compact table: group, count, sum, avg as relevant.\n"
+                    "   - Each data point must be on its own line with proper markdown formatting.\n"
+                    "   - Add blank line before final conclusions.\n"
                     "   - Handle missing values by excluding nulls unless the user requests otherwise.\n\n"
 
                     "4. Analytics (trends, outliers, distributions, comparisons):\n"
@@ -178,6 +186,17 @@ class AIComponents:
                     "- Do NOT include internal numeric keys (e.g., contactKey, customerKey, vendorKey, addressKey, phoneKey).\n"
                     "- No recommendations unless asked.\n\n"
 
+                    "CRITICAL FORMATTING RULES:\n"
+                    "- Each list item MUST be on its own line starting with '- '.\n"
+                    "- Never combine multiple bullet points on the same line.\n"
+                    "- MANDATORY BLANK LINE: After every list/bullet points, you MUST insert a blank line before writing any conclusion or summary sentence.\n"
+                    "- Example correct format:\n"
+                    "  - Item 1\n"
+                    "  - Item 2\n"
+                    "  \n"
+                    "  Conclusion text here.\n"
+                    "- Start responses immediately - no preambles or data source mentions.\n\n"
+                    
                     "Remember: Default to concise answers with bullets or compact tables, grounded only in the provided documents."
                 ).replace("{k}", str(self.config.VECTOR_STORE_K))
             )
@@ -191,16 +210,69 @@ class AIComponents:
 
                 @staticmethod
                 def _sanitize_output(text: str) -> str:
-                    """Remove internal keys such as contactKey from LLM output."""
+                    """Remove internal keys such as contactKey from LLM output and fix formatting."""
                     if not isinstance(text, str):
                         return text
                     # Remove explicit 'contactKey: <number>' patterns
                     text = re.sub(r"\bcontactKey\s*:\s*\d+", "", text)
                     # Remove standalone 'contactKey' labels in bullets or tables
                     text = re.sub(r"(?i)\bcontactKey\b", "", text)
-                    # Clean up leftover double spaces or stray separators
-                    text = re.sub(r"\s{2,}", " ", text)
-                    text = re.sub(r"\s*[,|;-]\s*(,|\||;|-)\s*", " ", text)
+                    
+                    # Fix bullet point formatting - ensure each bullet is on its own line
+                    # Look for patterns like "Site: X - Another Site: Y" where multiple items are on one line
+                    # Split on " - " that separates different entities
+                    lines = text.split('\n')
+                    fixed_lines = []
+                    for line in lines:
+                        # Check if line contains multiple items separated by " - "
+                        # Pattern: "Name: value - Name2: value2" but not "Name - value" (which is single item)
+                        if line.count(' - ') > 1 or (' - ' in line and line.count(':') >= 2):
+                            # This line has multiple items, split them
+                            parts = line.split(' - ')
+                            for part in parts:
+                                part = part.strip()
+                                if part and not part.startswith('- '):
+                                    fixed_lines.append(part)
+                        else:
+                            fixed_lines.append(line)
+                    
+                    text = '\n'.join(fixed_lines)
+                    
+                    # Add blank line before conclusion sentences
+                    # Look for patterns like "The entity with..." or "In conclusion" etc after lists
+                    conclusion_patterns = [
+                        r'^(The (?:entity|company|organization|business).+)',
+                        r'^(In conclusion.+)',
+                        r'^(Therefore.+)',
+                        r'^(As (?:a result|shown).+)'
+                    ]
+                    
+                    lines = text.split('\n')
+                    result_lines = []
+                    prev_was_list_item = False
+                    
+                    for i, line in enumerate(lines):
+                        # Check if line is a list item (has "Name: number" pattern)
+                        is_list_item = (line.strip() and ':' in line and 
+                                       any(char.isdigit() for char in line) and
+                                       not line.strip().startswith('#') and
+                                       not line.strip().startswith('The ') and
+                                       not line.strip().startswith('- '))
+                        
+                        # Check if line is a conclusion
+                        is_conclusion = any(re.search(pattern, line.strip()) for pattern in conclusion_patterns)
+                        
+                        if is_conclusion and prev_was_list_item:
+                            # Add blank line before conclusion
+                            result_lines.append('')
+                        
+                        result_lines.append(line)
+                        prev_was_list_item = is_list_item
+                    
+                    text = '\n'.join(result_lines)
+                    
+                    # Minimal cleanup - preserve structure
+                    text = re.sub(r' {2,}', ' ', text)  # Multiple spaces to single space
                     return text.strip()
 
                 def invoke(self, question: str, conversation_history: str = ""):
