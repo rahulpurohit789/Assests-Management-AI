@@ -4,27 +4,72 @@ Handles all Streamlit UI elements and interactions with a clean, ChatGPT-like in
 """
 
 import streamlit as st
-from typing import List, Dict, Any, Optional
-import time
+from typing import Any
 
 
 class UIComponents:
     """Handles all UI components and interactions."""
     
     def __init__(self):
-        """Initialize UI components."""
+        """Initialize UI components and ephemeral multi-chat state."""
         self.example_queries = [
             "Show me all assets from Singapore",
             "List all Caterpillar machines", 
-            "Which vehicles are assigned to Homer Simpson?",
             "What is the warranty expiration date for MPT-001?",
-            "How many assets are in each category?",
-            "Tell me about the most expensive assets"
+            "How many assets are in each category?"
         ]
-        
-        # Initialize session state for chat history
-        if "messages" not in st.session_state:
-            st.session_state.messages = []
+        self._ensure_chat_state()
+
+    def _ensure_chat_state(self):
+        """Create in-memory chat registry without external storage."""
+        if "chats" not in st.session_state:
+            st.session_state.chats = []  # [{id, title, messages:[{role,content}]}]
+        if "active_chat_id" not in st.session_state:
+            st.session_state.active_chat_id = None
+        if "next_chat_id" not in st.session_state:
+            st.session_state.next_chat_id = 1
+
+        # Ensure at least one chat exists and is active
+        if not st.session_state.chats:
+            self._start_new_chat()
+        if st.session_state.active_chat_id is None:
+            st.session_state.active_chat_id = st.session_state.chats[0]["id"]
+
+    def _start_new_chat(self):
+        """Create a new empty chat and make it active (newest on top)."""
+        cid = st.session_state.next_chat_id
+        st.session_state.next_chat_id += 1
+        chat = {"id": cid, "title": "Open chat", "messages": []}
+        st.session_state.chats.insert(0, chat)
+        st.session_state.active_chat_id = cid
+
+    def _get_active_chat(self):
+        for c in st.session_state.chats:
+            if c["id"] == st.session_state.active_chat_id:
+                return c
+        return None
+
+    def _truncate_title(self, title: str, max_len: int = 20) -> str:
+        """Return a display-safe title of at most max_len characters, adding '...' if truncated."""
+        safe = (title or "").strip()
+        if len(safe) <= max_len:
+            return safe
+        return safe[:max_len] + "..."
+
+    def _delete_chat(self, chat_id: int):
+        st.session_state.chats = [c for c in st.session_state.chats if c["id"] != chat_id]
+        if not st.session_state.chats:
+            self._start_new_chat()
+        st.session_state.active_chat_id = st.session_state.chats[0]["id"]
+    
+    def _select_chat(self, chat_id: int):
+        """Set the active chat (button callback)."""
+        if any(c["id"] == chat_id for c in st.session_state.chats):
+            st.session_state.active_chat_id = chat_id
+    
+    def _delete_chat_callback(self, chat_id: int):
+        """Start delete confirmation for a chat."""
+        st.session_state.pending_delete_chat_id = chat_id
     
     def display_title(self):
         """Display the main title and description."""
@@ -76,6 +121,90 @@ class UIComponents:
             background-color: #f3f4f6;
             border-color: #9ca3af;
         }
+        /* Chat list styling */
+        .chat-list-title { font-weight: 600; margin-bottom: 0.25rem; }
+        .chat-item-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0.2rem;
+            border-radius: 8px;
+            flex-wrap: nowrap;
+            background: transparent;
+        }
+        .chat-item-row:hover { background: #f8fafc; }
+        .chat-item-btn { all: unset; cursor: pointer; color: #0f172a; }
+        .chat-item-btn.active { font-weight: 600; }
+        .chat-del-btn { all: unset; cursor: pointer; color: #64748b; opacity: 0; transition: opacity 0.15s; padding: 0 0.25rem; }
+        .chat-item-row:hover .chat-del-btn { opacity: 1; }
+        .chat-del-btn:hover { color: #ef4444; }
+        /* Streamlined buttons: remove borders/background fully inside sidebar chat rows */
+        section[data-testid="stSidebar"] .chat-row .stButton>button {
+            background: transparent !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            min-height: auto !important;
+            line-height: 1.2 !important;
+            color: #0f172a !important;
+            text-decoration: none !important;
+            width: auto !important;
+            text-align: left !important;
+            overflow: hidden !important;
+            white-space: nowrap !important;
+            text-overflow: ellipsis !important;
+        }
+        section[data-testid="stSidebar"] .chat-row .stButton>button:hover {
+            background: transparent !important;
+            color: #0f172a !important;
+            text-decoration: none !important;
+        }
+        section[data-testid="stSidebar"] .chat-row .del .stButton>button {
+            color: #64748b !important;
+            font-weight: 400 !important;
+        }
+        section[data-testid="stSidebar"] .chat-row .del .stButton>button:hover {
+            color: #ef4444 !important;
+            text-decoration: none !important;
+        }
+        /* Row layout tidy spacing */
+        .chat-item-row { padding: 0.2rem 0.15rem; }
+        .chat-row .del { opacity: 0; transition: opacity 0.15s; }
+        .chat-row:hover .del { opacity: 1; }
+        .chat-row .del .stButton>button { padding-right: 4px !important; }
+        .chat-row [data-testid="column"] { padding-left: 0 !important; padding-right: 0 !important; }
+        /* Keep both buttons on one line on mobile too */
+        .chat-row [data-testid="stHorizontalBlock"] { display: flex !important; flex-wrap: nowrap !important; align-items: center !important; gap: 6px !important; width: 100% !important; }
+        .chat-row [data-testid="column"]:first-child { flex: 1 1 auto !important; min-width: 0 !important; }
+        .chat-row [data-testid="column"]:last-child { flex: 0 0 auto !important; }
+        /* Small red dot button appearance */
+        section[data-testid="stSidebar"] .chat-row .dot .stButton>button {
+            width: 14px !important;
+            height: 14px !important;
+            min-width: 14px !important;
+            min-height: 14px !important;
+            padding: 0 !important;
+            border-radius: 50% !important;
+            background: #ef4444 !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            color: transparent !important;
+        }
+        section[data-testid="stSidebar"] .chat-row .dot .stButton>button:hover { filter: brightness(0.9); }
+
+        /* Responsive: tighten fonts/padding on narrow screens */
+        @media (max-width: 480px) {
+            .main-title { font-size: 1.6rem; }
+            .subtitle { font-size: 0.95rem; }
+            .chat-item-row { gap: 0.35rem; padding: 0.15rem 0.1rem; }
+            section[data-testid="stSidebar"] .chat-row .stButton>button { font-size: 0.95rem !important; }
+        }
+        @media (max-width: 360px) {
+            .main-title { font-size: 1.4rem; }
+            .subtitle { font-size: 0.9rem; }
+        }
         </style>
         """, unsafe_allow_html=True)
         
@@ -83,42 +212,32 @@ class UIComponents:
         st.markdown('<p class="subtitle">Ask me anything about your assets. I can help you find, analyze, and understand your asset data.</p>', unsafe_allow_html=True)
     
     def display_sidebar(self, config):
-        """Display a minimal sidebar with basic info."""
+        """Sidebar with New chat button and list of ephemeral chats."""
         with st.sidebar:
-            st.markdown("### 📊 Quick Stats")
-            
-            # Get basic stats without showing technical details
-            from pathlib import Path
-            if config.JSON_FILE_PATH and Path(config.JSON_FILE_PATH).exists():
-                try:
-                    import json
-                    with open(config.JSON_FILE_PATH, 'r') as f:
-                        data = json.load(f)
-                    
-                    total_assets = len(data)
-                    entities = len(set(asset.get('entityName', '') for asset in data if asset.get('entityName')))
-                    manufacturers = len(set(asset.get('manufacturer', '') for asset in data if asset.get('manufacturer')))
-                    
-                    st.metric("Total Assets", total_assets)
-                    st.metric("Locations", entities)
-                    st.metric("Manufacturers", manufacturers)
-                except:
-                    st.info("Loading asset data...")
-            else:
-                st.warning("No data file found")
-            
-            st.markdown("---")
-            st.markdown("### ⚙️ AI Settings")
-            # Runtime controls (no hardcoding logic)
-            temp = st.slider("Model temperature", 0.0, 1.0, float(config.LLM_TEMPERATURE), 0.05,
-                             help="Lower = more deterministic; higher = more creative")
-            k = st.slider("Results to retrieve (k)", 3, 30, int(config.VECTOR_STORE_K), 1,
-                          help="Number of top matches given to the model")
-            # Apply to config for this session
-            config.LLM_TEMPERATURE = float(temp)
-            config.VECTOR_STORE_K = int(k)
+            st.markdown("### Chats")
+            active = self._get_active_chat()
+            disable_new = active is not None and len(active.get("messages", [])) == 0 and len(st.session_state.chats) > 0
+            if st.button("➕ New chat", use_container_width=True, disabled=disable_new, help=("Finish the current chat before creating a new one" if disable_new else None)):
+                self._start_new_chat()
+                st.rerun()
 
-            st.markdown("---")
+            # Render chat list (newest first) using minimal-styled buttons
+            for chat in st.session_state.chats:
+                # Backward-compatible: rename any legacy "New chat N" placeholders for display
+                display_title = chat["title"]
+                if display_title.lower().startswith("new chat "):
+                    display_title = "Open chat"
+                # Enforce a max of 20 visible characters for sidebar labels
+                display_title = self._truncate_title(display_title, 20)
+                with st.container(border=False):
+                    st.button(
+                        display_title,
+                        key=f"open_{chat['id']}",
+                        on_click=self._select_chat,
+                        args=(chat["id"],),
+                        use_container_width=True,
+                    )
+
             st.markdown("### 💡 Tips")
             st.markdown("• Ask specific questions about your assets")
             st.markdown("• Use asset IDs for precise searches")
@@ -126,30 +245,26 @@ class UIComponents:
             st.markdown("• Request data analysis or insights")
     
     def display_chat_interface(self, ai_chain: Any, retriever: Any):
-        """Display the main chat interface."""
+        """Display the main chat interface for the active conversation."""
         st.markdown('<div class="chat-container">', unsafe_allow_html=True)
         
-        # Display chat history
-        for message in st.session_state.messages:
+        active_chat = self._get_active_chat()
+        if active_chat is None:
+            self._start_new_chat()
+            active_chat = self._get_active_chat()
+
+        # Display chat history for the active chat
+        for message in active_chat["messages"]:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
         
-        # Example queries
-        if not st.session_state.messages:
-            st.markdown("### 💡 Try asking me:")
-            
-            # Create example buttons in a grid
-            cols = st.columns(2)
-            for i, query in enumerate(self.example_queries):
-                with cols[i % 2]:
-                    if st.button(f"💡 {query}", key=f"example_{i}", help="Click to use this example"):
-                        st.session_state.user_query = query
-                        st.rerun()
-        
         # Chat input
         if prompt := st.chat_input("Ask me anything about your assets..."):
-            # Add user message to chat history
-            st.session_state.messages.append({"role": "user", "content": prompt})
+            # Add user message to current chat
+            active_chat["messages"].append({"role": "user", "content": prompt})
+            # Name chat after first user message
+            if len(active_chat["messages"]) == 1:
+                active_chat["title"] = (prompt.strip() or "New chat")[:48]
             
             # Display user message
             with st.chat_message("user"):
@@ -160,7 +275,7 @@ class UIComponents:
                 with st.spinner("Thinking..."):
                     try:
                         # Build conversation history from previous messages
-                        conversation_history = self._build_conversation_history()
+                        conversation_history = self._build_conversation_history(active_chat)
                         
                         # Check if it's a specific query that needs exact data
                         if self._is_data_query(prompt):
@@ -171,18 +286,12 @@ class UIComponents:
                         st.markdown(response)
                         
                         # Add assistant response to chat history
-                        st.session_state.messages.append({"role": "assistant", "content": response})
+                        active_chat["messages"].append({"role": "assistant", "content": response})
                         
                     except Exception as e:
                         error_msg = "I'm sorry, I encountered an error processing your request. Please try again or rephrase your question."
                         st.markdown(error_msg)
-                        st.session_state.messages.append({"role": "assistant", "content": error_msg})
-        
-        # Clear chat button
-        if st.session_state.messages:
-            if st.button("🗑️ Clear Chat", type="secondary"):
-                st.session_state.messages = []
-                st.rerun()
+                        active_chat["messages"].append({"role": "assistant", "content": error_msg})
         
         st.markdown('</div>', unsafe_allow_html=True)
     
@@ -195,10 +304,7 @@ class UIComponents:
         )
     
     def _is_data_query(self, query: str) -> bool:
-        """Check if query needs exact data lookup (deterministic).
-        Detects patterns like "work orders for asset MPT-001" - specific ID-based lookups.
-        Note: Count queries are now handled intelligently by the AI through GLOBAL SUMMARY.
-        """
+        """Check if query needs exact data lookup (deterministic)."""
         q = (query or "").lower()
         if ("work order" in q or "work orders" in q) and "asset" in q:
             return True
@@ -276,11 +382,7 @@ class UIComponents:
         return response
 
     def _get_exact_data_response(self, query: str) -> str:
-        """Deterministic lookup for work orders by assetId, including priorities and linked invoices.
-        
-        This handles ONLY specific ID-based queries (e.g., "work orders for asset MPT-001").
-        For count queries, the AI now handles these intelligently through GLOBAL SUMMARY documents.
-        """
+        """Deterministic lookup for work orders by assetId, including priorities and linked invoices."""
         try:
             import re
             import json
@@ -346,13 +448,14 @@ class UIComponents:
         except Exception:
             return None
     
-    def _build_conversation_history(self) -> str:
-        """Build conversation history string from session state messages."""
-        if not st.session_state.messages or len(st.session_state.messages) < 2:
+    def _build_conversation_history(self, chat) -> str:
+        """Build conversation history string from a chat dict."""
+        msgs = chat["messages"]
+        if not msgs or len(msgs) < 2:
             return "No previous conversation."
         
         # Get last 10 messages (5 exchanges) to avoid token limits
-        recent_messages = st.session_state.messages[-10:]
+        recent_messages = msgs[-10:]
         
         history = ""
         for message in recent_messages:
