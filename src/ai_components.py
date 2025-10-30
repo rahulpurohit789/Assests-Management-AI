@@ -13,6 +13,7 @@ from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+import re
 
 
 class AIComponents:
@@ -129,43 +130,55 @@ class AIComponents:
                     
                     "AVAILABLE DATA (showing top {k} relevant documents):\n{context}\n\n"
                     
+                    "## Response Style (Default):\n"
+                    "- Be concise. Default to bullets or compact tables when helpful.\n"
+                    "- No preamble or filler. Only answer the question asked.\n"
+                    "- Headings only when explicitly requested.\n"
+                    "- For entity lists, use one bullet per entity.\n"
+                    "- For structured data, prefer a small Markdown table.\n\n"
+
                     "## Analytical Response Guidelines:\n"
-                    "1. **Count Queries** (how many, count, total):\n"
-                    "   - ALWAYS use GLOBAL SUMMARY documents when present\n"
-                    "   - Extract exact numbers, never estimate\n"
-                    "   - Reference the specific count: 'According to GLOBAL SUMMARY: Total assets: 424'\n\n"
+                    "1. Count Queries (how many, count, total):\n"
+                    "   - Prefer GLOBAL SUMMARY when present.\n"
+                    "   - Extract exact numbers only.\n"
+                    "   - Answer with just the metric, e.g., Total customers: 28.\n\n"
+
+                    "2. List Queries (list all, show all):\n"
+                    "   - Return bullets only, no commentary.\n"
+                    "   - Prefer summary docs like DOC: CUSTOMERS SUMMARY for authoritative lists.\n"
+                    "   - Include human-readable identifiers only. For customers: name, customerId, email, status.\n"
+                    "   - Do NOT include internal keys (contactKey, customerKey, vendorKey, addressKey, phoneKey).\n"
+                    "   - Use hyphen separated inline format: Name - id, email, status.\n"
+                    "   - If a field is missing/null, use '-'.\n"
+                    "   - If the summary states Total X: N, output exactly N items.\n\n"
+
+                    "3. Aggregations (sum, average, min, max, median, group by):\n"
+                    "   - Calculate strictly from the provided context; do not invent values.\n"
+                    "   - State units and currency when known.\n"
+                    "   - Show a one line formula summary when non-trivial, e.g., Sum of purchaseCost across assets.\n"
+                    "   - When grouping, present a compact table: group, count, sum, avg as relevant.\n"
+                    "   - Handle missing values by excluding nulls unless the user requests otherwise.\n\n"
+
+                    "4. Analytics (trends, outliers, distributions, comparisons):\n"
+                    "   - Base insights only on data in context.\n"
+                    "   - Identify top contributors and anomalies with simple metrics.\n"
+                    "   - If a time range is implied, state the range detected from the data.\n"
+                    "   - Keep insights to 3 to 5 tight bullets unless asked for more.\n\n"
+
+                    "5. Detail Queries (tell me about, details of):\n"
+                    "   - Extract comprehensive information from DOC entries.\n"
+                    "   - Include related entities only if asked.\n"
+                    "   - Never expose internal keys; omit fields ending with 'Key' (e.g., contactKey).\n\n"
                     
-                    "2. **List Queries** (list all, show all):\n"
-                    "   - Provide all relevant DOC entries with their IDs\n"
-                    "   - Include key identifying fields (IDs, names, status)\n"
-                    "   - Group by categories when relevant\n\n"
-                    
-                    "3. **Analysis Queries** (trends, patterns, insights):\n"
-                    "   - Identify patterns across documents\n"
-                    "   - Highlight anomalies or notable findings\n"
-                    "   - Provide business-relevant context for numbers\n"
-                    "   - Suggest actionable recommendations when appropriate\n\n"
-                    
-                    "4. **Detail Queries** (tell me about, details of):\n"
-                    "   - Extract comprehensive information from DOC entries\n"
-                    "   - Include related entities (e.g., work orders for an asset)\n"
-                    "   - Show custom fields, nested data, and relationships\n\n"
-                    
-                    "5. **Aggregation Queries** (total cost, average, sum):\n"
-                    "   - Calculate from multiple documents\n"
-                    "   - Show your calculation method briefly\n"
-                    "   - Include entity IDs for traceability\n\n"
-                    
+
                     "## General Rules:\n"
-                    "- Be precise with numbers - extract exact values from context\n"
-                    "- Never say 'None' if data exists - search all DOC types\n"
-                    "- Always include relevant IDs (assetId, workOrderNumber, invoiceNumber, etc.)\n"
-                    "- If information is incomplete, acknowledge it but provide what you can\n"
-                    "- Provide business context - explain what the numbers mean\n"
-                    "- For translation requests, maintain data accuracy across all languages\n\n"
-                    
-                    "Remember: You're helping business users understand their operations. "
-                    "Be clear, precise, and helpful."
+                    "- Use exact numbers from context; include units and currency when known.\n"
+                    "- Do not hallucinate fields or records; if data is insufficient, say what is missing.\n"
+                    "- Include only human-readable IDs where relevant (assetId, workOrderNumber, invoiceNumber, customerId, vendorId).\n"
+                    "- Do NOT include internal numeric keys (e.g., contactKey, customerKey, vendorKey, addressKey, phoneKey).\n"
+                    "- No recommendations unless asked.\n\n"
+
+                    "Remember: Default to concise answers with bullets or compact tables, grounded only in the provided documents."
                 ).replace("{k}", str(self.config.VECTOR_STORE_K))
             )
 
@@ -175,6 +188,20 @@ class AIComponents:
                     self.retriever = retriever
                     self.prompt_template = prompt_template
                     self.vectorstore = vectorstore
+
+                @staticmethod
+                def _sanitize_output(text: str) -> str:
+                    """Remove internal keys such as contactKey from LLM output."""
+                    if not isinstance(text, str):
+                        return text
+                    # Remove explicit 'contactKey: <number>' patterns
+                    text = re.sub(r"\bcontactKey\s*:\s*\d+", "", text)
+                    # Remove standalone 'contactKey' labels in bullets or tables
+                    text = re.sub(r"(?i)\bcontactKey\b", "", text)
+                    # Clean up leftover double spaces or stray separators
+                    text = re.sub(r"\s{2,}", " ", text)
+                    text = re.sub(r"\s*[,|;-]\s*(,|\||;|-)\s*", " ", text)
+                    return text.strip()
 
                 def invoke(self, question: str, conversation_history: str = ""):
                     try:
@@ -202,8 +229,12 @@ class AIComponents:
                         count_keywords = ["how many", "count", "total", "number of", "amount of"]
                         is_count_query = any(keyword in qnorm for keyword in count_keywords)
                         
-                        # Detect list queries for special handling
-                        list_keywords = ["list all", "show all", "all customers", "all vendors", "all employees", "all assets"]
+                        # Detect list queries for special handling (broadened)
+                        list_keywords = [
+                            "list all", "show all", "show me all", "all customers", "all vendors", "all employees", "all assets",
+                            "list customers", "list customer", "customers list", "customer list", "list customer details", "customer details",
+                            "show customers", "show customer details", "get customers", "display customers"
+                        ]
                         is_list_query = any(keyword in qnorm for keyword in list_keywords)
                         
                         # More robust entity detection
@@ -244,11 +275,12 @@ class AIComponents:
                             if global_summary_content not in parts[1:]:
                                 parts.append(global_summary_content)
                         
-                        # For list queries, prioritize relevant summary documents
+                        # For list queries, prioritize relevant summary documents and ensure they are first
                         if is_list_query:
                             if customers_summary_content and ("customer" in qnorm or "customers" in qnorm):
-                                if customers_summary_content not in parts:
-                                    parts.insert(0, customers_summary_content)
+                                if customers_summary_content in parts:
+                                    parts.remove(customers_summary_content)
+                                parts.insert(0, customers_summary_content)
                         
                         # For general queries, include global summary at the end for context
                         if not is_count_query and global_summary_content and global_summary_content not in parts:
@@ -261,7 +293,8 @@ class AIComponents:
                             question=qnorm,
                         )
                         response = self.llm.invoke(prompt)
-                        return getattr(response, 'content', str(response))
+                        raw = getattr(response, 'content', str(response))
+                        return self._sanitize_output(raw)
                     except Exception as e:
                         print(f"Error in RAGChain.invoke: {e}")
                         return f"Error processing request: {str(e)}"
