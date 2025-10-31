@@ -350,6 +350,10 @@ class UIComponents:
         q = (query or "").lower()
         if ("work order" in q or "work orders" in q) and "asset" in q:
             return True
+        # Detect open work orders intents
+        if ("open work orders" in q or "open work order" in q or "open wo" in q or "open wos" in q
+            or ("work orders" in q and "open" in q)):
+            return True
         return False
     
     def _analyze_floors(self, data: list) -> str:
@@ -430,8 +434,16 @@ class UIComponents:
             import json
             from pathlib import Path
 
-            # Extract assetId token after the word 'asset'
-            m = re.search(r"asset\s+([A-Za-z0-9\-_.]+)", query, flags=re.IGNORECASE)
+            q = (query or "")
+            ql = q.lower()
+
+            # If query requests open work orders (global)
+            if ("open work orders" in ql or "open work order" in ql or "open wo" in ql or "open wos" in ql
+                or ("work orders" in ql and "open" in ql)):
+                return self._get_open_work_orders_response()
+
+            # Otherwise, extract assetId token after the word 'asset'
+            m = re.search(r"asset\s+([A-Za-z0-9\-_.]+)", q, flags=re.IGNORECASE)
             if not m:
                 return None
             asset_id = m.group(1).strip()
@@ -489,6 +501,66 @@ class UIComponents:
             return "\n".join(lines)
         except Exception:
             return None
+
+    def _get_open_work_orders_response(self) -> str:
+        """Return open work orders with strict filtering and nested list formatting grouped by entity."""
+        try:
+            import json
+            from pathlib import Path
+
+            base = Path("JsonData")
+            wo_path = base / "WorkOrders.json"
+            if not wo_path.exists():
+                return "No work order data available."
+
+            def load_json_safe(path: Path):
+                for enc in ['utf-8', 'utf-8-sig', 'latin-1', 'cp1252']:
+                    try:
+                        with open(path, 'r', encoding=enc) as f:
+                            return json.load(f)
+                    except Exception:
+                        continue
+                return []
+
+            work_orders = load_json_safe(wo_path) or []
+
+            # Option B: statusId=="New" AND dateCompleted is null AND workOrderActive==true
+            def is_open(wo: dict) -> bool:
+                return (
+                    (wo.get("statusId") or "").strip().lower() == "new" and
+                    (wo.get("dateCompleted") is None or str(wo.get("dateCompleted")).strip() == "") and
+                    bool(wo.get("workOrderActive", False))
+                )
+
+            open_wos = [wo for wo in work_orders if is_open(wo)]
+            if not open_wos:
+                return "**0 open work orders** found."
+
+            # Group by entityName
+            grouped = {}
+            for wo in open_wos:
+                ent = (wo.get("entityName") or "Unknown").strip()
+                grouped.setdefault(ent, []).append(wo)
+
+            # Sort groups and items (by dateCreated desc within group)
+            for ent, items in grouped.items():
+                items.sort(key=lambda x: (x.get("dateCreated") or ""), reverse=True)
+
+            lines = ["### Open Work Orders", "", f"- **Count**: {len(open_wos)}", "- **By entity**:"]
+            for ent in sorted(grouped.keys()):
+                items = grouped[ent]
+                lines.append(f"  - **{ent}** ({len(items)})")
+                for wo in items:
+                    won = wo.get("workOrderNumber")
+                    wok = wo.get("workOrderKey")
+                    dc = wo.get("dateCreated")
+                    st = wo.get("statusId")
+                    pr = wo.get("priorityId")
+                    lines.append(f"    - WO #{won or wok}: {st}, created {dc}, priority {pr}")
+
+            return "\n".join(lines)
+        except Exception:
+            return "Unable to compute open work orders right now."
     
     def _build_conversation_history(self, chat) -> str:
         """Build conversation history string from a chat dict."""
